@@ -1,0 +1,96 @@
+/*
+font-family: 'Inria Serif', serif;
+*/
+@font-face {
+    font-family: police;
+    src: url("Radicals DEMO.ttf");
+}
+
+body{
+    margin: auto;
+    width: 900px;
+    background-color: aquamarine;
+}
+
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+h1, h2{
+    color: beige;
+    text-align: center;
+}
+p{
+    color: bisque;
+    font-size: 14px;
+    text-align: justify;
+}
+a{
+
+    color: deepskyblue;
+    text-decoration: none;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+img{
+    width: 300px;
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    border-radius: 20%;
+}
+img:hover{
+    box-shadow: 5px 10px #888888 ;
+}
+table, th, td {
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+li{
+    font-size: 30px;
+    color: white;
+
+}#reves{
+     background-color: green;
+ }
+#acceuil{
+    background-color: #888888;
+}
+#etudes{
+    background-color: bisque;
+}
+#loisirs{
+    background-color: rebeccapurple;
+}
+#sports{
+    background-color: brown;
+}
+.belleImage{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.belleImage:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.qhuit{
+    font-family: police;
+    color: magenta;
+    font-size: 58px;
+
+
+}
+.neuf{
+    font-family: 'Inria Serif', serif;
+    font-size: 55px;
+    color: magenta;
+}

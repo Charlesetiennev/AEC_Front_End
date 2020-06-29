@@ -1,0 +1,53 @@
+html,body{
+    margin: 0;
+    height: 100%;
+}
+a{
+    /*border-radius: 15em;*/
+}
+.p_25{
+    padding: 25vh 0vh;
+}
+.trans__50__rouge{
+    background-color: rgba(255,0,0,.50);
+}
+.trans__50__gris{
+    background-color: rgba(169,169,169,.50);
+}
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section1{
+    background-image: url("../img/section1.jpeg");
+}
+#section3{
+    background-image: url("../img/section3.jpg");
+}
+#section4{
+    background-image: url("../img/section4.jpg");
+}
+@media only screen and (max-width: 580px){
+    #section1{
+        background-image: url("../img/section1alt.jpg");
+    }
+    #section2{
+        display: none;
+    }
+    #section3 {
+        text-align: center;
+    }
+    #section3 div{
+        display: inline-block;
+    }
+    #section4 div{
+        height: auto;
+        padding: 0vh;
+    }
+    #ghost{
+        display: none;
+    }
+}
+/*      https://charlesetiennev.github.io/AEC_Front_End/Integration1/parallax/index.html    */

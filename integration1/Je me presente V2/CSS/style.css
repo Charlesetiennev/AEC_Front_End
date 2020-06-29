@@ -1,0 +1,58 @@
+/*  style.css
+    Par Charles-Etienne Villemure
+    Le 21 Novembre 2019  */
+body{
+    margin: auto;
+    width: 900px;
+    background-color: aquamarine;
+    background: url("../media/fond-ecran.jpg") no-repeat center;
+}
+
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+h1, h2{
+   color: beige;
+    text-align: center;
+}
+p{
+    color: bisque;
+    font-size: 14px;
+    text-align: justify;
+}
+a{
+
+    color: deepskyblue;
+    text-decoration: none;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+}
+img{
+    width: 300px;
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    border-radius: 20%;
+}
+img:hover{
+    box-shadow: 5px 10px #888888 ;
+}
+table, th, td {
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+li{
+    font-size: 30px;
+    color: white;
+}

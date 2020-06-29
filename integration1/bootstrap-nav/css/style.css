@@ -1,0 +1,12 @@
+body{
+    height: 400vh;
+    background-color: #0c5460;
+}
+nav{
+    background-color: #343a40;
+}
+.dropdown-menu{
+    background-color: #343a40;
+}
+
+    /*https://charlesetiennev.github.io/AEC_Front_End/Integration1/bootstrap-nav/index.html*/

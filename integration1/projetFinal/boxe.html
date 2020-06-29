@@ -1,0 +1,193 @@
+<!--Index.HTML-->
+<!--Par Charles-Etienne Villemure-->
+<!--Le 2 Avril 2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <title>Boxe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg">
+</head>
+
+<body>
+<!--NAVBAR-->
+<div class="pos-f-t fixed-top">
+    <div class="collapse navbar-collapse pl-3 navbar-dark bg-dark" id="navbarToggleExternalContent">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Boxe<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="renovation.html">Rénovation</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#sectionContact">Contact</a></li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <h2 class="navbar-brand">Projet Final</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-circle-down"></i>
+        </button>
+    </nav>
+</div>
+<!--HEADER-->
+<header>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters p-0">
+            <div class="acceuilBoxe text-white d-flex align-items-center justify-content-center">
+                <h1 class="bg-black">La baguarre!</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<!--SECTION DEUX-->
+<section class="parallax parallaxBoxe">
+    <div class="container py-5">
+        <div class="row no-gutters">
+            <div class="col-12 d-flex justify-content-center">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                    Voir quelques photos de moi qui boxe.
+                </button>
+                <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-danger">
+                                <h5 class="modal-titl text-white">Carousel de mes photo de boxe.</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="myCarousel" class="carousel slide " data-ride="carousel">
+                                    <ul class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    </ul>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active ">
+                                            <img class="img-fluid" src="img/moiBoxe1.jpg" alt="Jeune en manque de confiance">
+                                            <div class="carousel-caption">-->
+                                                <h3>Le desespoir dans ses yeux</h3>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="img/moiBoxe4.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="img/moiBoxe3.jpg" alt="">
+                                            <div class="carousel-caption">-->
+                                                <h3>La precision est obligatoire dans ce metier</h3>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="img/moiBoxe5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SECTION TROIS-->
+<section>
+    <div class="container-fluid py-3 text-dark text-center">
+        <div>
+            <h2>Voici plusieurs boxeurs qui m'ont influencé</h2>
+            <hr class="hrDark">
+        </div>
+            <div class="row no-gutters">
+                <div class="col-sm-4 col-6">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Maidana.jpg" alt="Marcos Rene Maidana">
+                    <p>Marcos Rene Maidana</p>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Garcia.jpg" alt="Mikey Garcia">
+                    <p>Mikey Garcia</p>
+                </div>
+                <div class="col-sm-4 col-12">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Gamboa.jpg" alt="Yuriorkis Gamboa">
+                    <p class="py-3">Yuriorkis Gamboa</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-sm-4 col-6">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Pascal.jpg" alt="Jean Pascal">
+                    <p>Jean Pascal</p>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Mayweather.jpg" alt="Floyd Mayweather Jr">
+                    <p>Floyd Mayweather Jr</p>
+                </div>
+                <div class="col-sm-4 col-12">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Pacquiao.jpg" alt="Manny Pacquiao">
+                    <p class="py-3">Manny Pacquiao</p>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-6">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Rigondeaux.jpg" alt="Guillermo Rigondeaux">
+                    <p>Guillermo Rigondeaux</p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid mx-auto d-block" src="img/influence/Cotto.jpeg" alt="Miguel Cotto">
+                    <p>Miguel Cotto</p>
+                </div>
+            </div>
+    </div>
+</section>
+<!--FOOTER-->
+<footer>
+    <div class="container-fluid p-0">
+      <hr class="hrDark">
+        <div class="row no-gutters text-center bg-dark text-white">
+            <div class="mx-auto pb-3">
+                <h2>Un peu d'histoire inutile comme derniere section.</h2>
+                <p>La source des textes est : https://www.boxeanglaise.net/boxe-anglaise/</p>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-5 col-12 bg-secondary p-1 ">
+                    <p>Au Moyen Âge la boxe connut aussi un intérêt populaire en Europe de l’Est surtout un Russie et dans la zone frontalière polono-russe (boxe de l’ancienne Russie). Malgré ses origines anciennes la boxe telle que nous la connaissons aujourd’hui se développe surtout dans les pays anglo-saxons d’abord en Angleterre et par la suite aux Etats-Unis. Pour parler des anciennes formes de boxe il faudrait donc utiliser le terme « pugilisme » enfin de souligner les différences historiques et culturelles.
+                        Etymologie
+                        Le mot boxe provient du verbe anglais to box pression pan-germanique reprise en Angleterre similaire au mot allemand ancien baksen, moderne baksen, boxen, ou du danois baxe ou encore du suédois baxas, boxas.</p>
+                    <img src="img/influence/HiroakiTeshigawara.jpg" class="img-fluid d-block mx-auto" alt="HiroakiTeshigawara">
+                    <p>
+                        La troisième théorie s’appuie sur un autre mot Allemand à savoir l’ancien teutonique boki,se qui en organisant des matchs de boxe essayait de créer un spectacle cohérent sur le plan organisationnel et esthétique.
+                        La première mention écrite provient du London protestant mercur du mois de janvier 1689 : « hier un match de boxe disputé devant Monsieur le duc d’Albermale entre son majordome et son boucher . Ce dernier remporte le prix comme il avait déjà fait plusieurs fois étant considéré malgré sa petite taille comme le meilleur en Angleterre dans cet exercice ». Les règles de base et la terminologie technique se sont développées à cette époque. En 1719 James Figg considéré comme le père de la boxe moderne lançait des défis à qui le voulait pour le titre de champion d’Angleterre.</p>
+                </div>
+                <div class="col-lg-3 col-12 p-1">
+                    <h2>Protège dents et coquille</h2>
+                    <p>Certaines zones du corps sont plus sensibles que d’autres et il faut donc les protéger au maximum. Le protège dents est obligatoire en compétition, mais il est aussi indispensable pendant les entraînements. Il ne protège pas seulement les dents, mais également la langue ou les joues que l’on peut mordre violemment lorsqu’on reçoit un mauvais coup.
+                        La coquille permet de protéger les testicules qui sont évidemment très sensibles. Là encore, c’est obligatoire en combat, mais c’est aussi indispensable lors des entraînements. Un coup bas involontaire est vite arrivé, et sans protection ce genre de coup peut vous handicaper pendant plusieurs heures. La coquille est également indispensable pour les femmes, dont les zones érogènes sont tout aussi sensibles et fragiles que pour les hommes. Pour ces dames, il existe aussi des protections pour protéger la poitrine.</p>
+                    <img src="img/protegeBucale.jpg" class="img-fluid d-block mx-auto" alt="protege Bucale">
+                </div>
+                <div class="col-lg-4 col-12 bg-secondary p-1 ">
+                    <h2>Le ring aussi appeller dans le jargon : "The dog cage!"</h2>
+                    <p>Le ring La boxe anglaise se pratique sur un ring. Il doit faire entre 4,90 et 7,30 mètres de côté. Il est entouré de cordes élastiques qui empêchent les boxeurs de sortir ou de tomber du ring. Chaque coin est rembourré de la base au sommet par des cousins de protection. La première corde se trouve à 40 cm du sol, la seconde à 80 cm et la dernière à 130 cm. Le ring peut être posé directement au sol, mais il est généralement surélevé sur une estrade pour permettre au public de mieux voir le combat.</p>
+                    <img src="img/ringBoxe.jpg" class="img-fluid d-block mx-auto" alt="Ring de boxe" >
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!---->
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

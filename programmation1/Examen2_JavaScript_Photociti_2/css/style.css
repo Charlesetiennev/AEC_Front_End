@@ -1,0 +1,40 @@
+/*style.css*/
+/*Par Charles-Etienne Villemure*/
+/*Le 12 Avril 2020*/
+.miniatureFond{
+    width: 5vh;
+    height: 5vh;
+}
+.blanc{
+    background-image: url("../background/blanc.jpg");
+}
+.bleu{
+    background-image: url("../background/bleu.jpg");
+}
+.bleuFonce{
+    background-image: url("../background/bleuFonce.jpg");
+}
+.gris{
+    background-image: url("../background/gris.jpg");
+}
+.noir{
+    background-image: url("../background/noir.jpg");
+}
+.rose{
+    background-image: url("../background/rose.jpg");
+}
+.rouge{
+     background-image: url("../background/rouge.jpg");
+ }
+.lettre{
+    margin: 5px;
+}
+.borderImg{
+    border: solid 2px white;
+}
+#myCarousel{
+    z-index: 2;
+    position: center;
+    background-color: #383d41;
+}
+/*https://charlesetiennev.github.io/AEC_Front_End/Programmation1/Examen2_JavaScript_Photociti_2/index.html*/

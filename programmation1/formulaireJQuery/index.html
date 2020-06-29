@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="utf-8">
+    <title>Shawicon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-8">
+            <img src="img/logo-shawicon.png" class="img-fluid" alt="logo">
+        </div>
+    </div>
+    <!--FORMULAIRE-->
+    <form>
+        <div class="form-group">
+            <label for="nomUsage"></label>
+            <input type="text" class="form-control" id="nomUsage" placeholder="Entrez le nom d'usage">
+        </div>
+        <div class="form-group">
+            <label for="motDePasse"></label>
+            <input type="password" class="form-control" id="motDePasse" placeholder="Entrez le mot de passe">
+        </div>
+        <div class="form-group">
+            <label for="comfirmationMotDePasse"></label>
+            <input type="password" class="form-control" id="comfirmationMotDePasse" placeholder="Confirmez le mot de passe">
+        </div>
+        <div class="form-group">
+            <label></label>
+            <input type="email" class="form-control" id="email" placeholder="Entrez le courriel">
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <label class="radio-inline"><input type="radio" name="choixUnivers" value="starWars">Star wars</label>
+                <label class="radio-inline"><input type="radio" name="choixUnivers" value="marvel">Marvel</label>
+                <label class="radio-inline"><input type="radio" name="choixUnivers" value="dc">DC</label>
+            </div>
+        </div>
+<!--        SECTION STARWARS-->
+        <div class="form-row" id="sectionStarWars">
+            <div class="col">
+                <div class="form-group">
+                    <label for="persoStarWars">Choisissez votre personnage Starwars</label>
+                    <select class="form-control" id="persoStarWars">
+                        <option id="yoda">Yoda</option>
+                        <option id="obiwan">Obiwan</option>
+                        <option id="darthVader">Darth Vader</option>
+                        <option id="autreStarWars">Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <img src="" id="imagePersoStarwars">
+            </div>
+        </div>
+<!--        SECTION MARVEL-->
+        <div class="form-row"  id="sectionMarvel">
+            <div class="col">
+                <div class="form-group">
+                    <label for="persoMarvel">Choisissez votre personnage Marvel</label>
+                    <select class="form-control" id="persoMarvel">
+                        <option id="spiderman">Spiderman</option>
+                        <option id="thor">Thor</option>
+                        <option id="hulk">Hulk</option>
+                        <option id="autreMarvel">Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <img src="" id="imagePersoMarvel" alt="non-defini">
+            </div>
+        </div>
+<!--        SECTION DC-->
+        <div class="form-row"  id="sectionDC">
+            <div class="col">
+                <div class="form-group">
+                    <label for="persoDC">Choisissez votre personnage Marvel</label>
+                    <select class="form-control" id="persoDC">
+                        <option id="batman">Batman</option>
+                        <option id="superman">Superman</option>
+                        <option id="flash">Flash</option>
+                        <option id="arrow">Arrow</option>
+                        <option id="autreDC">Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <img src="" id="imagePersoDC" alt="non-defini">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!---->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>

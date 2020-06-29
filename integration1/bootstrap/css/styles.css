@@ -1,0 +1,18 @@
+/*style.css*/
+/*Le 14 Janvier 2020*/
+/*Par Charles-Etienne Villemure*/
+.row{
+    height: 100px;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}

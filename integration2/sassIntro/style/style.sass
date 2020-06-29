@@ -1,0 +1,43 @@
+//TEXT SIZING
+$count:2
+@for $i from 1 through 6
+  .text#{$count}
+    font-size : $count+rem
+  $count: $count+2
+.dLineB
+  display: inline-block
+//FLECHE DIRECTION
+$directions: 'flecheNord' , 'flecheSud','flecheEst','flecheOuest'
+@each $direction in $directions
+  .#{$direction}
+    background-image: url("../img/"+ $direction + '.jpg')
+    height: 30vh
+    width: 30vh
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+.algitmctr
+  display: flex
+  align-content: center
+  justify-content: center
+.pt
+  padding-top: 5rem
+//3. Créez une map de chiffre:valeur (“un”:1, “deux”:2,..., “dix”:10).
+//Avec une boucle @each, créez 10 classes qui ajustent la largeur d’un élément de 1 à 10 rem.
+$numbers: ('un':1,'deux':2,'trois':3,'quatre':4,'cinq':5,'six':6,'sept':7,'huit':8,'neuf':9,'dix':10)
+@each $number ,$i in $numbers
+  .#{$number}
+    width : $i+rem
+.bgREM
+  background-color: red
+//4. Créez un @mixin avec paramètre qui affiche une image à gauche ou à droite selon le
+//paramètre.
+@mixin imageGauche
+  position: absolute
+  left: 0
+@mixin imageDroite
+  position: absolute
+  right: 0
+
+
+

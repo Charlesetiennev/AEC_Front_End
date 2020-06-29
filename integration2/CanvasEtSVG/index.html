@@ -1,0 +1,40 @@
+<!--Index.HTML-->
+<!--Par Charles-Etienne Villemure-->
+<!--Le 4/25/2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <title>Canvas Et SVG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+<!--SVG-->
+<svg width="1000" height="1000">
+    <rect x="150" y="20" width="98" height="550"
+        style="fill: #0c5460;stroke: #005cbf;stroke-width: 0;"/>
+    <circle cx="52" cy="63" r="60" style="stroke: #1e7e34; stroke-width:2; fill: #bd2130"/>
+    <ellipse cx="870" cy="435" rx="300" ry="40"
+        style="fill: #1e7e34; stroke: #5a6268;stroke-width: 3;stroke-opacity: 0.3"/>
+    <line x1="33" y1="245" x2="555" y2="960"
+          style="stroke: #1b1e21; stroke-width: 26"/>
+    <polygon points="245,11 590,159 340,555"
+          style="fill: #856404"/>
+    <polyline points="40,40 450,333 670,44, 999,999"
+              style="fill: none; stroke: #005cbf; stroke-width: 11;stroke-opacity: 0.6"/>
+    <path d="M125 800 L555 90 L788 900 Z"
+        style="opacity: 0.2"/>
+    <text x="500" y="25" fill="blue">Ceci est rien et tout a la fois....</text>
+    <!--chat 33 , couleur pas dans choix, 23 lieu de naissance, -->
+</svg>
+
+<!--CANEVAS-->
+<canvas id="monCanevas" width="800" height="500"
+        style="border:2px solid #1b1e21">
+</canvas>
+<!---->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+ctx.fillStyle = 'black';
+ctx.fillRect(0,0,250,250);
+var grd = ctx.createLinearGradient(0,0,0,175);
+grd.addColorStop(0,'#007EFD');
+grd.addColorStop(1,'#B301F7');
+ctx.beginPath();
+ctx.arc(125,125,80,0,2 * Math.PI);
+ctx.fillStyle = grd;
+ctx.fill();
+ctx.beginPath();
+ctx.arc(195,105,80,0,2 * Math.PI);
+ctx.fillStyle = 'black';
+ctx.fill();

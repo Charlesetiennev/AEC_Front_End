@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="monTableaudiv">
+<table id="monTableau">
+
+    <tr>
+        <th>Titre du film</th>
+        <th>Année de sortie</th>
+    </tr>
+    <tr>
+        <td>Once Upon a Time... in Hollywood</td>
+        <td>2019</td>
+    </tr>
+    <tr>
+        <td>Pulp fiction</td>
+        <td>1994</td>
+    </tr>
+    <tr>
+        <td>Kill Bill</td>
+        <td>2003</td>
+    </tr>
+    <tr>
+        <td>Django</td>
+        <td>2012 </td>
+    </tr>
+    <tr>
+        <td>Inglourious Basterds</td>
+        <td>2009</td>
+    </tr>
+
+    <button onclick="sortListeDate()">Trier date</button>
+    <button onclick="sortListeNom()">Trier nom</button>
+
+</table>
+</div>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Venez-voir</button>
+    <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="#piechart">Graphique en pointe de tarte</a>
+        <a href="#linearchart">Graphique lineaire (courbe)</a>
+        <a href="#">3</a>
+        <a href="#">Quatre</a>
+        <a href="#">Cinq (5)</a>
+    </div>
+</div>
+
+<div id="piechart"></div>
+<div id="linearchart"></div>
+
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

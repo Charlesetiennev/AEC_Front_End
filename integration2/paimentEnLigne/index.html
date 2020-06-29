@@ -1,0 +1,86 @@
+<!--Index.HTML-->
+<!--Par Charles-Etienne Villemure-->
+<!--Le 4/25/2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <title>Canvas Et SVG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<header>
+    <div class="container-fluid bg-warning">
+        <div class="row text-center">
+            <h1 class="mx-auto">Reveiller les voisins sans pitier avec la belle perceuse Dewalt</h1>
+        </div>
+    </div>
+</header>
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-6">
+            <img class="img-fluid" src="img/perceuse.jpg" alt="produit">
+        </div>
+        <!--        -->
+        <div class="col-6 d-flex justify-content-center align-items-center">
+            <div>
+                <h3>Perceuse a beton qui buche  245$</h3>
+                <ul>
+                    <li>Pete du beton</li>
+                    <li>Buche din plancher</li>
+                    <li>Brasse de la colle a ceramique</li>
+                    <li>Brasse pete pis buche plein d'affaire</li>
+                    <li>Reveille les voisins le dimanche matin en faisant les renos</li>
+                </ul>
+                <div id="paypal-button-container"></div>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-12">
+            <a href="jotform.html" class="text-danger" >Autre Perceuse sur ce lien</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    paypal.Buttons({
+        style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+
+        },
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '1'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

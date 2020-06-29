@@ -1,0 +1,89 @@
+#monTableaudiv button{
+    font-family: Blippo, fantasy;
+    background-color: yellow;
+}
+#monTableaudiv{
+    position: relative;
+    left: 50vh;
+    margin-left: -25px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    /*margin-left: 50vh;*/
+    background-color: #af3a36;
+    color: white;
+    padding: 3vh;
+    border: solid 4px gray;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #8e338d;
+    border: none;
+}
+
+/* The search field */
+#myInput {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px 10px 10px 50px;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {background-color: blueviolet;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+    position: relative;
+    display: flex;
+    top: 25vh;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkgreen;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    top: 40px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: yellow;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+#piechart{
+    margin-top: 100vh;
+    width: 70vh;
+    height: 70vh;
+}
+#linearchart{
+    width: 70vh;
+    height: 70vh;
+}
+
+/*
+ https://charlesetiennev.github.io/AEC_Front_End/Integration2/rechercheTableauEtGraphiques/index.html
+
+ */

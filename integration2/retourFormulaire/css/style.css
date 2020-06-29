@@ -1,0 +1,24 @@
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:20px
+}
+
+label {
+    display:inline-block;
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+}
+.mx-auto{
+
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+
+/*https://charlesetiennev.github.io/AEC_Front_End/Integration2/Chapitre1/index.html*/

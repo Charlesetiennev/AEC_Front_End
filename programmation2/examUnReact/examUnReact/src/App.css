@@ -1,0 +1,16 @@
+ /* App.css 
+ Par Charles-Etienne Villemure
+ Le 16 Juin 2020 */
+.card{
+    padding: 0;
+    max-width: 40vh;
+}
+img{
+    max-width: 25vh;
+}
+#root{
+    margin: 0;
+}
+#connexion{
+    margin-top: 25vh;
+}

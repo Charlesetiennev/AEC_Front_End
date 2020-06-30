@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.d1b05096.chunk.css",
+    "main.js": "./static/js/main.74633b6d.chunk.js",
+    "main.js.map": "./static/js/main.74633b6d.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.f66a7021.js",
+    "runtime-main.js.map": "./static/js/runtime-main.f66a7021.js.map",
+    "static/js/2.9c2cc0d1.chunk.js": "./static/js/2.9c2cc0d1.chunk.js",
+    "static/js/2.9c2cc0d1.chunk.js.map": "./static/js/2.9c2cc0d1.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.c3f5b983cebdfa2a147191b30a050c2d.js": "./precache-manifest.c3f5b983cebdfa2a147191b30a050c2d.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "./static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.9c2cc0d1.chunk.js.LICENSE.txt": "./static/js/2.9c2cc0d1.chunk.js.LICENSE.txt",
+    "static/media/billWennington.png": "./static/media/billWennington.9fca1e01.png",
+    "static/media/dennisRodman.png": "./static/media/dennisRodman.64b5fc0c.png",
+    "static/media/michaelJordan.jpg": "./static/media/michaelJordan.b8afe3b7.jpg",
+    "static/media/netflix.png": "./static/media/netflix.01cd8837.png",
+    "static/media/scottiePippen.jpg": "./static/media/scottiePippen.4ece6079.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f66a7021.js",
+    "static/js/2.9c2cc0d1.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.74633b6d.chunk.js"
+  ]
+}

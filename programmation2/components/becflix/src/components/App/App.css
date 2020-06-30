@@ -1,0 +1,14 @@
+/* https://charlesetiennev.github.io/AEC_Front_End/Programmation2React/components/becflix/build/index.html */
+#root{
+  background-color: #003DA5;
+}
+h1{
+  color: white;
+}
+
+.logoAcceuil{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -36,7 +36,7 @@ afficherPhoto(){
     }
     const tabImage= [
         {
-        src: require('../images/zebre.jpg'), 
+        src: require('./../images/zebre.jpg'), 
         alt:"" ,
         title:""},
     {

@@ -37,22 +37,22 @@ afficherPhoto(){
     const tabImage= [
         {
         src: require('./../images/zebre.jpg'), 
-        alt:"" ,
-        title:""},
+        alt:"zebre" ,
+        title:"zebre"},
     {
-    src: require('../images/zebre.jpg'), 
-        alt:"" ,
-        title:""},
+    src: require('./../images/zebre.jpg'), 
+        alt:"zebre" ,
+        title:"zebre"},
     { 
-    src: require('../images/zebre.jpg'), 
+    src: require('./../images/zebre.jpg'), 
         alt:"", 
         title:"" },
     {
-    src:require('../images/zebre.jpg'), 
+    src:require('./../images/zebre.jpg'), 
         alt:"", 
         title:""},
     {
-    src:require('../images/zebre.jpg'), 
+    src:require('./../images/zebre.jpg'), 
         alt:"Les invincibles", 
         title:"Les Invincibles" },
     { 

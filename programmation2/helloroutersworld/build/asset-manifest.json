@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.12253de7.chunk.css",
+    "main.js": "./static/js/main.2672c453.chunk.js",
+    "main.js.map": "./static/js/main.2672c453.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4bca888e.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4bca888e.js.map",
+    "static/css/2.af3c1da9.chunk.css": "./static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c8cd8168.chunk.js": "./static/js/2.c8cd8168.chunk.js",
+    "static/js/2.c8cd8168.chunk.js.map": "./static/js/2.c8cd8168.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.17adbdf49964696607d2ab1694bccc5b.js": "./precache-manifest.17adbdf49964696607d2ab1694bccc5b.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "./static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.12253de7.chunk.css.map": "./static/css/main.12253de7.chunk.css.map",
+    "static/js/2.c8cd8168.chunk.js.LICENSE.txt": "./static/js/2.c8cd8168.chunk.js.LICENSE.txt",
+    "static/media/suricateZooGranby.jpg": "./static/media/suricateZooGranby.401de8c3.jpg",
+    "static/media/zebre.jpg": "./static/media/zebre.cd10bcdf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bca888e.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c8cd8168.chunk.js",
+    "static/css/main.12253de7.chunk.css",
+    "static/js/main.2672c453.chunk.js"
+  ]
+}

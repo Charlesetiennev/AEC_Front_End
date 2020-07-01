@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container,Row,Col,Image} from 'react-bootstrap'
-
+import {Container,Row,Col,Image} from 'react-bootstrap';
+import {RetourAccueil} from '../components/retouracceuil';
 
 
 
@@ -11,12 +11,15 @@ export class Photos extends React.Component{
         this.afficherPhoto=this.afficherPhoto.bind(this)
     }
 afficherPhoto(){
-   return tabImage.map((element, i) => ( <Image
+   return tabImage.map((element, i) => ( 
+   <Col xs='3'>
+   <Image
         key={"photo" + i}
         src={element.src}
         alt={element.alt}
         title={element.title}
       ></Image>
+      </Col>
     ))
 }
 
@@ -24,10 +27,9 @@ afficherPhoto(){
                 return (
                     <Container fluid>
                         <Row>
-                            <Col>
-                                {this.afficherPhoto()}
-                            </Col>
+                           {this.afficherPhoto()}                      
                         </Row>
+                        <RetourAccueil/>
                     </Container>
                 )                
         }
@@ -35,20 +37,20 @@ afficherPhoto(){
     const tabImage= [
         {
         src: require('../images/zebre.jpg'), 
-        alt:"19-2" ,
-        title:"19-2"},
+        alt:"" ,
+        title:""},
     {
     src: require('../images/zebre.jpg'), 
-        alt:"Unite 9" ,
-        title:"Unite 9"},
+        alt:"" ,
+        title:""},
     { 
     src: require('../images/zebre.jpg'), 
-        alt:"District 31", 
-        title:"District 31" },
+        alt:"", 
+        title:"" },
     {
     src:require('../images/zebre.jpg'), 
-        alt:"Fugueuse", 
-        title:"Fugueuse"},
+        alt:"", 
+        title:""},
     {
     src:require('../images/zebre.jpg'), 
         alt:"Les invincibles", 

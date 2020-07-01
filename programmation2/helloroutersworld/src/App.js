@@ -15,7 +15,8 @@ function App() {
       <Route path="/video" component={Video} /> 
       <Route path="/photos" component={Photos} /> 
       <Route path="/carte" component={Carte} /> 
-    </> 
+    </>
+
   );
 }
 

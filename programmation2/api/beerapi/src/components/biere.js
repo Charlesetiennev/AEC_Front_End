@@ -20,7 +20,7 @@ export class Biere extends React.Component{
                   </ul>  */}
                   <ul> 
                   {Object.keys(this.props.toutLobjet[0]).map(key => 
-                      ( <li key={key}>{key} : {this.props.toutLobjet[key]}</li>))} 
+                      ( <li key={key}>{key} : {this.props.toutLobjet[0],[key]}</li>))} 
                   </ul> 
                   </Card.Text>
               </Card.Body>

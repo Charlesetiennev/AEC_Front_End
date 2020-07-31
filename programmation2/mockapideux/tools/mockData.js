@@ -37,7 +37,25 @@ const pokemons = [
   },
 ]
 
+const employers =[
+  {
+    'id': 1,
+    'Nom': 'Etienne',
+    'Prenom': 'Charles',
+    'Fonction': 'Pdg',
+    'Photo': '',
+    'Departement': ''
+  },
+  {
+    'id': 2,
+    'Nom': 'Olivier',
+    'Prenom': 'Liam',
+    'Fonction': 'Saccageur',
+    'Photo': '',
+    'Departement': 'Acceuil'
+  }
+]
 // Using CommonJS style export so we can consume via Node (without using Babel-node)
 module.exports = {
-  pokemons
+  employers
 };

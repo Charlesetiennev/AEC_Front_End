@@ -19,7 +19,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Passion App">
     <link rel="apple-touch-icon" href="/img/icons/icon-144x144.png">
-
+    <!--Service Worker-->
+    <script>
+        // Register service worker.
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+        .then((reg) => {
+        console.log('Service worker registered.', reg);
+        });
+        });
+        }
+    </script>
 </head>
 <body>
 <!--NAVBAR-->

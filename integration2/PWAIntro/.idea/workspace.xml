@@ -17,9 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -88,7 +88,7 @@
       <workItem from="1585869345572" duration="65000" />
       <workItem from="1585869453373" duration="1648000" />
       <workItem from="1597963861723" duration="1849000" />
-      <workItem from="1598012763502" duration="3095000" />
+      <workItem from="1598012763502" duration="3871000" />
     </task>
     <servers />
   </component>

@@ -6,12 +6,12 @@
   "background_color": "#fff",
   "theme_color": "#fff",
   "icons": [{
-    "src": "AEC_Front_End2/integration2/PWAIntro/img/icons/maskable_icon192.png",
+    "src": "Charlesetiennev/AEC_Front_End2/integration2/PWAIntro/img/icons/maskable_icon192.png",
     "sizes": "192x192",
     "type": "image/png",
     "purpose": "any maskable"
   }, {
-    "src": "AEC_Front_End2/integration2/PWAIntro/img/icons/maskable_icon512.png",
+    "src": "Charlesetiennev/AEC_Front_End2/integration2/PWAIntro/img/icons/maskable_icon512.png",
     "sizes": "512x512",
     "type": "image/png",
     "purpose": "any maskable"

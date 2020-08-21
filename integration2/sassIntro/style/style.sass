@@ -7,7 +7,7 @@ $count:2
 .dLineB
   display: inline-block
 //FLECHE DIRECTION
-$directions: 'flecheNord' , 'flecheSud','flecheEst','flecheOuest'
+$directions: flecheNord,flecheSud,flecheEst,flecheOuest
 @each $direction in $directions
   .#{$direction}
     background-image: url("../img/"+ $direction + '.jpg')
@@ -32,12 +32,28 @@ $numbers: ('un':1,'deux':2,'trois':3,'quatre':4,'cinq':5,'six':6,'sept':7,'huit'
   background-color: red
 //4. Créez un @mixin avec paramètre qui affiche une image à gauche ou à droite selon le
 //paramètre.
-@mixin imageGauche
-  position: absolute
-  left: 0
-@mixin imageDroite
-  position: absolute
-  right: 0
+@mixin positionDeLimage($imageGauche)
+  @if $imageGauche
+    position: absolute
+    left: 0
+  @else
+    position: absolute
+    right: 0
+.imageGauche
+  @include positionDeLimage($imageGauche: true)
+
+//5. Créez une fonction qui prend en paramètre une String et une lettre. La fonction doit
+//retourner combien de fois la lettre est présente dans la string !
+//ex : Mafonction(bonjour,o) retourne 2
+//$text : 'bonjour'
+//@function Mafunction($text, $nombres)
+//each $text@
 
 
-
+@function  Mafunction($mot,$lettre)
+  $count:0
+  @for $i from 1 through str-length($mot)
+    $ltr: str-slice($mot, $i, $i)
+    @if $ltr == $lettre
+      $count: $count +1
+    @return $count

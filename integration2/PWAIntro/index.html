@@ -1,0 +1,172 @@
+<!--Index.HTML-->
+<!--Par Charles-Etienne Villemure-->
+<!--Le 2 Avril 2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <title>Accueil projet final</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg">
+
+</head>
+<body>
+<!--NAVBAR-->
+<div class="pos-f-t fixed-top">
+    <div class="collapse navbar-collapse pl-3 navbar-dark bg-dark" id="navbarToggleExternalContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="boxe.html">Boxe</a></li>
+                <li class="nav-item"><a class="nav-link" href="renovation.html">Rénovation</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#sectionContact">Contact</a></li>
+            </ul>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <h2 class="navbar-brand">Projet Final</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-chevron-circle-down "></i>
+        </button>
+    </nav>
+</div>
+<!--Header-->
+<header>
+     <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                 <source src="https://static.videezy.com/system/resources/previews/000/007/313/original/Plexus.mp4" type="video/mp4">
+              </video>
+    <div class="container h-100" >
+        <div class="row h-100 text-center align-items-center" >
+            <div class="col-12 text-white" >
+                <h1 class="display-3">Présentation de mes passions</h1>
+                <p class="lead mb-0">Cette page survole quelques-unes de mes passions.</p>
+            </div>
+        </div>
+    </div>
+</header>
+<!--SECTION DEUX-->
+<section>
+    <div class="container">
+        <div class="row no-gutters pt-5 text-center">
+            <div class="col-lg-4 col-6 px-3">
+                <div class="card bg-light">
+                    <div class="card-header bg-dark text-white">
+                        <p class="m-0">Boxe <a class="iconeFont" href="boxe.html"> <i class="fas fa-running text-white pl-3"></i></a></p>
+                    </div>
+                    <div class="card-body pt-5">
+                        <i class="fas fa-running fa-5x text-secondary"></i>
+                        <h5 class="card-title">Un mode de vie</h5>
+                        <hr class="hrDark">
+                        <a class="btn btn-outline-dark" href="boxe.html" role="button">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6 px-3">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-secondary">
+                        <p class="m-0">Rénovation <a class="iconeFont" href="renovation.html"> <i class="fas fa-hammer text-dark pl-3"></i></a></p>
+                    </div>
+                    <div class="card-body pt-5">
+                        <i class="fas fa-hammer fa-5x text-dark"></i>
+                        <h5 class="card-title">Attaindre son idéal</h5>
+                        <hr class="hrDark">
+                        <a class="btn btn-outline-secondary" href="renovation.html" role="button">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6 offset-lg-0 offset-3 px-3">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-dark text-white">
+                        <p class="m-0">Autres <a class="iconeFont" href="#autresPassion"> <i class="fas fa-football-ball text-white pl-3"></i></a></p>
+                    </div>
+                    <div class="card-body pt-5">
+                        <i class="fas fa-football-ball fa-5x text-secondary"></i>
+                        <h5 class="card-title">Plusieurs passions</h5>
+                        <hr class="hrDark">
+                        <a class="btn btn-outline-dark" href="#autresPassion" role="button">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--SECTION TROIS-->
+<section  id="autresPassion" >
+    <div class="jumbotron jumbotron-fluid m-0">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <h1>Voici une liste de quelques passions que j'ai qui n'auront pas de page dédiée sur ce site:</h1>
+                </div>
+                <div class="col-md-6 col-12 d-flex justify-content-center">
+                    <ul id="fontSize">
+                        <li>Le sim-racing</li>
+                        <li>La musique</li>
+                        <li>District 31</li>
+                        <li>La biologie</li>
+                        <li>La programmation WEB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FOOTER-->
+<footer id="sectionContact">
+    <div class="container-fluid parallax parallaxMontagne text-white py-5">
+        <div class="row">
+            <div class="offset-1 col-5">
+                <h2>Contact et commentaires</h2>
+        <form action="index.html">
+            <div class="form-group">
+                <label for="prenom">Prenom: </label>
+                <input type="text" class="form-control" id="prenom" placeholder="Prenom">
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" class="form-control" id="nom" placeholder="nom">
+            </div>
+
+            <div class="form-group">
+                <label for="raison">Raison du contact:</label>
+                <select id="raison" class="form-control">
+                    <option selected>Commentaires</option>
+                    <option>Renseignement</option>
+                    <option>Avis</option>
+                    <option>Placement de produit</option>
+                </select>
+            </div>
+            <div>
+                <label>Section ciblée</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sectionContact" id="acceuil" value="option1" checked>
+                    <label class="form-check-label" for="acceuil">Accueil</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sectionContact" id="pageBoxe" value="option2">
+                    <label class="form-check-label" for="pageBoxe">Page sur la boxe</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sectionContact" id="pageRenovation" value="option2">
+                    <label class="form-check-label" for="pageRenovation">Page sur la Renovation</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="commentaire">Commentaires:</label>
+                <textarea class="form-control" id="commentaire" rows="4"></textarea>
+            </div>
+            <input class="mt-2" type="submit" value="Envoyer"/>
+        </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<!---->
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

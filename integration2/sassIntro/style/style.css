@@ -116,4 +116,9 @@
   background-color: red;
 }
 
+.imageGauche {
+  position: absolute;
+  left: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

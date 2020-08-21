@@ -1,0 +1,295 @@
+<!--Index.html-->
+<!--Par Charles-Etienne Villemure-->
+<!--Le 11 Juillet 2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <title>Exercice Sass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid p-0 banner">
+        <div class="row">
+            <div class="menuNav pt-3">
+                <nav class=" navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand ml-5 pt-2" href="#"><img src="img/Jevelin-logov1.png" class="img-fluid" alt=""> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-white dropdown-toggle pl-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Style
+                                </a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item bg-dark text-white" href="#">Mansonry + Sidebar</a>
+                                    <a class="dropdown-item bg-dark text-white" href="#">Mansonry + Full width</a>
+                                    <a class="dropdown-item bg-dark text-white"  href="#">From side to side + slider</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">People</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">Desing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-4" href="#">Commercial</a>
+                            </li>
+                            <li class="nav-item pt-2">
+                                <a target="#"  href="#" class="pl-3 text-center"><i class="fas fa-search text-white"></i></a>
+                            </li>
+                            <li class="nav-item pt-2">
+                                <a target="#"  href="#" class="pl-3"><i class="fab fa-twitter text-white"></i></a>
+                            </li>
+                            <li class="nav-item pt-2">
+                                <a target="#"  href="#" class="px-3"><i class="fab fa-facebook-f text-white"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row text-white">
+            <div class="col-12 text-center">
+                <h1>Home<br></h1>
+                <h3>Mansory + boxel layout</h3>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="categorie">
+    <div class="container-fluid p-0">
+        <div class="row pt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <a class="m-1 px-4 py-2 selectionner" href="#">All</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Commercial</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Desing</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Nature</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">People</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Photography</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Tech</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Travel</a>
+                <a class="m-1 px-4 py-2 hoverbleu" href="#">Uncategorized</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--PREMIERE COLONNE-->
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="offset-2 pl-5 col-3">
+            <div class="row">
+                <div class="card my-3 mx-3" style="">
+                        <img class="card-img-top img-fluid" src="./img/blog1.jpg" alt="Card image">
+                    <div class="card-body shadow">
+                        <span >by shufflehound    November 23,2016</span>
+                        <h4 class="card-title"><a href="#" class="">Trip that you’ll never ever forget</a></h4>
+                        <p class="card-text text-left">Quisque dictum eros nisl, a maximus massa accumsan non. Aliquam erat volutpat. Quisque at finibus dui. Praesent…</p>
+                        <div>
+                            <hr class="hrhr">
+                            <a href="#" class="px-3 py-2 commentNumber hoverbleu"><i class="far fa-comment"></i> 0</a>
+                        </div>
+                        <br/>
+                        <a href="#">PEOPLE</a>,<a href="#">TRAVEL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card my-3 mx-3" style="">
+                    <img class="card-img-top img-fluid" src="./img/blog3.jpg" alt="Card image">
+                    <div class="card-body shadow">
+                        <span >by shufflehound    November 23,2016</span>
+                        <h4 class="card-title"><a href="#" class="">Trip that you’ll never ever forget</a></h4>
+                        <p class="card-text text-left">Quisque dictum eros nisl, a maximus massa accumsan non. Aliquam erat volutpat. Quisque at finibus dui. Praesent…</p>
+                        <div>
+                            <hr class="hrhr">
+                            <a href="#" class="px-3 py-2 commentNumber hoverbleu"><i class="far fa-comment"></i> 0</a>
+                        </div>
+                        <br/>
+                        <a href="#">PEOPLE</a>,<a href="#">TRAVEL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--DEUXIEME COLONNE        -->
+        <div class="col-3 essaie">
+            <div class="row">
+                <div class="card my-3 mx-3" style="">
+                    <img class="card-img-top img-fluid" src="./img/blog2.jpg" alt="Card image">
+                    <div class="card-body shadow">
+                        <span >by shufflehound    November 23,2016</span>
+                        <h4 class="card-title"><a href="#" class="">Trip that you’ll never ever forget</a></h4>
+                        <p class="card-text text-left">Quisque dictum eros nisl, a maximus massa accumsan non. Aliquam erat volutpat. Quisque at finibus dui. Praesent…</p>
+                        <div>
+                            <hr class="hrhr">
+                            <a href="#" class="px-3 py-2 commentNumber hoverbleu"><i class="far fa-comment"></i> 0</a>
+                        </div>
+                        <br/>
+                        <a href="#">PEOPLE</a>,<a href="#">TRAVEL</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card my-3 mx-3" style="">
+                    <img class="card-img-top img-fluid" src="./img/blog2.jpg" alt="Card image">
+                    <div class="card-body shadow">
+                        <span >by shufflehound    November 23,2016</span>
+                        <h4 class="card-title"><a href="#" class="">Trip that you’ll never ever forget</a></h4>
+                        <p class="card-text text-left">Quisque dictum eros nisl, a maximus massa accumsan non. Aliquam erat volutpat. Quisque at finibus dui. Praesent…</p>
+                        <div>
+                            <hr class="hrhr">
+                            <a href="#" class="px-3 py-2 commentNumber hoverbleu"><i class="far fa-comment"></i> 0</a>
+                        </div>
+                        <br/>
+                        <a href="#">PEOPLE</a>,<a href="#">TRAVEL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--COLONNE FIN        -->
+        <div class="col-3 pt-2">
+            <div class="" id="latestpost">
+                <h4>Latest Posts</h4>
+<!--LATEST POST UN                -->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/blog1.jpg" alt="element1" class="rounded-circle imglatest">
+                    </div>
+                    <div class="col p-0">
+                        <div class="row">
+                            <div class="offset-2 col ">
+                                <a href="#" class="d-inline">PEOPLE</a>
+                                <p class="d-inline">,</p>
+                                <a href="#" class="d-inline">TRAVEL</a><br>
+                                <h5 class="d-inline">Trip that you'll never <br> ever forget</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hrNoTranslate mb-5">
+                </div>
+
+<!--LATEST POST DEUX-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/blog2.jpg" alt="element1" class="rounded-circle imglatest">
+                    </div>
+                    <div class="col p-0">
+                        <div class="row">
+                            <div class="offset-2 col ">
+                                <a href="#" class="d-inline">PHOTOGRAPHY</a>
+                                <p class="d-inline">,</p>
+                                <a href="#" class="d-inline">TECH</a><br>
+                                <h5 class="d-inline">Must-have gear</h5>
+                            </div>
+                            <hr class="hrhr w-100 mt-5">
+                        </div>
+                    </div>
+                </div>
+<!--LATEST POST TROIS-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/blog3.jpg" alt="element1" class="rounded-circle imglatest">
+                    </div>
+                    <div class="col p-0">
+                        <div class="row">
+                            <div class="offset-2 col ">
+                                <a href="#" class="d-inline">DESING</a>
+                                <p class="d-inline">,</p>
+                                <a href="#" class="d-inline">PHOTOGRAPHY</a><br>
+                                <h5 class="d-inline">Movielike photo shoot<br>B&W</h5>
+                            </div>
+                            <hr class="hrhr w-100 mt-5">
+                        </div>
+                    </div>
+                </div>
+<!--LATEST POST QUATRE-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/blog4.jpg" alt="element1" class="rounded-circle imglatest">
+                    </div>
+                    <div class="col p-0">
+                        <div class="row">
+                            <div class="offset-2 col ">
+                                <a href="#" class="d-inline">PEOPLE</a>
+                                    <br>
+                                <h5 class="d-inline">Craftsmen at work</h5>
+                            </div>
+                            <hr class="hrhr w-100 mt-5">
+                        </div>
+                    </div>
+                </div>
+<!--ANNONCE-->
+                <div class="row mb-5">
+                     <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/11/2016/11/ad.png" alt="annonce" class="img-fluid">
+                </div>
+<!--SEARCH BOX-->
+                <div class="row">
+                    <form>
+                        <
+                    </form>
+                </div>
+<!--LINK TAGS-->
+                <div class="row pl-2">
+                    <div class="col-12">
+                        <h4>Popular tags</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">BIKE</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">BUILDING</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">CAMERA</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">CRAFT</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">GEAR</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">GIRL</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">JUMPING</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">LAKE</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">LIFESTYLE</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">MASTER</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">MOCK-UP</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">MOTIVATION</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">MOUNTAINS</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">MOVIE</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">NOTEBOOK</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">OFFICE</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">STORMTROOPER</a>
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">SWIMMING</a>
+                </div>
+                <div class="row pt-3">
+                    <a href="#" class="hoverbleu px-2 py-1 mr-3 bg-secondary rounded text-danger">TROOPER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

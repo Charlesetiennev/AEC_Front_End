@@ -20,6 +20,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sassExercice" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +51,9 @@
       <option name="presentableId" value="Default" />
       <updated>1593261577822</updated>
       <workItem from="1593261581871" duration="7779000" />
+      <workItem from="1593525760270" duration="1696000" />
+      <workItem from="1594470315003" duration="87000" />
+      <workItem from="1594471013181" duration="2204000" />
     </task>
     <servers />
   </component>
@@ -61,7 +65,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,0 +1,23 @@
+.banner {
+  background: url("../img/banner.jpg");
+  background-position: bottom;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+  opacity: 1;
+}
+nav.active {
+  opacity: 1;
+}
+nav a {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header.css.map */

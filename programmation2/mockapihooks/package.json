@@ -18,7 +18,6 @@
   "scripts": {
     "start": "run-p start:dev start:api",
     "start:dev": "react-scripts start",
-    // ENLEVER EN BAS POUR GARDER DB TOUJOURS PAREILLE
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
     "build": "react-scripts build",

@@ -1,0 +1,20 @@
+#root {
+  height: 100vh;
+  background-color: black;
+}
+.Jauner {
+  color: yellow;
+}
+.menu {
+  padding-top: 4vh;
+}
+.boutton {
+  width: 12vh;
+  padding: 2vh;
+  color: yellow;
+  background-color: slategrey;
+}
+form,
+.rowEmployer {
+  margin-top: 5vh;
+}

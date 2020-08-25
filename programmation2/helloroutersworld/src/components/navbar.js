@@ -14,12 +14,13 @@ export class BarreDeNavigation extends React.Component{
         return ( 
         <> 
         <Navbar bg="dark" variant="dark"> 
-            <Navbar.Brand href="/">Zoo de Granby</Navbar.Brand> 
+            <Navbar.Brand to="/">Zoo de Granby</Navbar.Brand> 
             <Nav className="mr-auto"> 
-            <NavLink exact to="/" activeStyle={activeStyle}>Accueil</NavLink> {" | "} 
-            <NavLink to="/photos" activeStyle={activeStyle}>Photos</NavLink> {" | "} 
-            <NavLink to="/video" activeStyle={activeStyle}>Video</NavLink> {" | "} 
-            <NavLink to="/carte" activeStyle={activeStyle}>Carte</NavLink> {" | "}  
+            <NavLink exact to="/" activeStyle={activeStyle}>Accueil</NavLink> 
+            <NavLink to="/photos" activeStyle={activeStyle}>Photos</NavLink>  
+            <NavLink to="/video" activeStyle={activeStyle}>Video</NavLink> 
+            <NavLink to="/Joke" activeStyle={activeStyle}>Joke</NavLink> 
+            <NavLink to="/carte" activeStyle={activeStyle}>Carte</NavLink> 
             </Nav> 
         </Navbar> 
         <br /> 

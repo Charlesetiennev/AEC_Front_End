@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,Row,Col,Image} from 'react-bootstrap'
-import ImageSuricate from '../images/suricateZooGranby.jpg'
+import ImageSuricate from './../images/suricateZooGranby.jpg'
 
 export class Accueil extends React.Component{
     constructor(props){
@@ -21,6 +21,6 @@ export class Accueil extends React.Component{
                     </Col>
                 </Row>
             </Container>
-        )
-        }
-    }
+                )
+            }
+            }

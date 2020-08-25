@@ -1,18 +1,27 @@
 {
   "employers": [
     {
+      "id": 1,
+      "Nom": "Etienne",
+      "Prenom": "Charles",
+      "Fonction": "Pdg",
+      "Photo": "",
+      "Departement": ""
+    },
+    {
       "id": 2,
-      "Nom": "Liam",
-      "Prenom": "Saccageur",
-      "Fonction": "",
-      "Photo": "Acceuil"
+      "Nom": "Saccageur",
+      "Prenom": "fads",
+      "Fonction": "Acceuil",
+      "Photo": "Acceuil par la"
     },
     {
       "id": 3,
       "Nom": "Etienne",
-      "Prenom": "Pdg",
-      "Fonction": "ulrfd",
-      "Photo": "Bateau"
+      "Prenom": "Liam",
+      "Fonction": "Saccageur",
+      "Photo": "fads",
+      "Departement": "dans lbateau"
     }
   ]
 }

@@ -8,6 +8,7 @@ function App() {
       <Button variant='primary' size='lg' block id='boutonInstall'>
         Installer l'application
       </Button>
+      <h1>hello World</h1>
     </div>
   );
 }

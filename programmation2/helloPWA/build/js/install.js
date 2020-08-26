@@ -1,5 +1,5 @@
 let deferredInstallPrompt = null;
-const installButton = document.getElementById(boutonInstall);
+const installButton = document.getElementById('boutonInstall');
 installButton.addEventListener('click', installPWA);
 // Add event listener for beforeinstallprompt event
 window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);

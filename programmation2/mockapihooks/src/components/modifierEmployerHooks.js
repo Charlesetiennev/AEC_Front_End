@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 
 export default function ModifierEmployerHooks(props) {
   const [donneesRecues, setDonneesRecues] = useState([
-    { id: '', Nom: '', Prenom: '', Departement: '', Fonction: '' },
+    { id: '', Nom: '', Prenom: '', Departement: '', Fonction: '', Photo: '' },
   ]);
-  const [photo, setPhoto] = useState(donneesRecues.Photo);
+  const [photo, setPhoto] = useState(donneesRecues.photo);
   useEffect(() => {
     getEmployers({});
   }, []);

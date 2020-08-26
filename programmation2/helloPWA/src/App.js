@@ -5,10 +5,9 @@ import { Button } from 'react-bootstrap';
 function App() {
   return (
     <div className='App'>
-      <Button variant='primary' size='lg' block id='boutonInstall'>
+      <Button variant='primary' size='lg' block id='boutonInstall' hidden>
         Installer l'application
       </Button>
-      <h1>hello World 2</h1>
     </div>
   );
 }

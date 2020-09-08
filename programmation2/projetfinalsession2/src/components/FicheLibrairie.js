@@ -21,6 +21,7 @@ export default function FicheLibrairie(props) {
       await props.match.params.id;
       const response = await fetch(API + '5f57951cd899cd03e8b4df61');
       const reponseDeApi = await response.json();
+      console.log(response);
       setDonneesRecues(reponseDeApi);
       if (!response.ok) {
         throw Error(response.statusText);

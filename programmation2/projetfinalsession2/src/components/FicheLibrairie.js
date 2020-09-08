@@ -12,14 +12,16 @@ export default function FicheLibrairie(props) {
   useEffect(() => {
     getLibrairie();
   }, []);
-
+  console.log(pokemonID);
+  console.log('allo');
   async function getLibrairie() {
+    console.log('allo');
+    console.log(pokemonID);
     try {
       await props.match.params.id;
-      const response = await fetch(API + '?_id=5f57951cd899cd03e8b4df61');
+      const response = await fetch(API + '5f57951cd899cd03e8b4df61');
       const reponseDeApi = await response.json();
       setDonneesRecues(reponseDeApi);
-      console.log(pokemonID);
       if (!response.ok) {
         throw Error(response.statusText);
       }

@@ -116,8 +116,8 @@ export class AjouterLibrairies extends React.Component {
           </Row>
         </div>
         {/* FORM */}
-        <Row>
-          <Col md={{ span: 4, offset: 4 }}>
+        <Row className='p-3'>
+          <Col sm={{ span: 4, offset: 4 }}>
             <Form ref={(div) => (this.form = div)}>
               <Form.Group controlId='logoLibrairies'>
                 <Form.Label>Logo</Form.Label>

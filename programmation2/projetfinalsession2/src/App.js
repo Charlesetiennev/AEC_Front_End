@@ -8,12 +8,14 @@ import { Row, Col } from 'react-bootstrap';
 import { Route, Switch } from 'react-router-dom';
 import ManageLibrairies from './components/ManageLibrairies';
 import FicheLibrairie from './components/FicheLibrairie';
+
 function App() {
   return (
     <>
-      <Row className='rowtest'>
-        {Menu()}
-        <Col sm='10'>
+      {Menu()}
+
+      <Row>
+        <Col sm='12'>
           <Switch className='rowafficher'>
             <Route path='/' exact component={Accueil} />
             <Route path='/2' component={Accueil} />

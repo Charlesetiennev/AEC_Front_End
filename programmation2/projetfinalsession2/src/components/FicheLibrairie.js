@@ -19,7 +19,7 @@ export default function FicheLibrairie(props) {
     console.log(pokemonID);
     try {
       await props.match.params.id;
-      const response = await fetch(API + '5f57951cd899cd03e8b4df61');
+      const response = await fetch(API + '5f58005ad899cd03e8b4df69');
       const reponseDeApi = await response.json();
       console.log(response);
       setDonneesRecues(reponseDeApi);
@@ -33,6 +33,7 @@ export default function FicheLibrairie(props) {
 
   return (
     <>
+      <h1>test</h1>
       <h1>{donneesRecues.nom}</h1>
     </>
   );

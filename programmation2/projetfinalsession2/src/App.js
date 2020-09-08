@@ -17,11 +17,11 @@ function App() {
       <Row>
         <Col sm='12'>
           <Switch className='rowafficher'>
-            <Route path='/' exact component={Accueil} />
+            <Route path='/4' component={Accueil} />
             <Route path='/2' component={Accueil} />
             <Route path='/listeLibrairies' component={ManageLibrairies} />
             <Route path='/ajouterLibrairies' component={AjouterLibrairies} />
-            <Route path='/Fichelibrairie:id' component={FicheLibrairie} />
+            <Route path='/' exact component={FicheLibrairie} />
             <Route component={Erreur404} />
           </Switch>
         </Col>

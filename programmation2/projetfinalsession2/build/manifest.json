@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "maskable_icon192.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "maskable_icon512.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": "index.html",
   "display": "standalone",
-  "theme_color": "#01686B",
-  "background_color": "#AAC0AF"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }

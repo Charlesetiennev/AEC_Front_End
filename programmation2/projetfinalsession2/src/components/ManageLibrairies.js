@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Librairies } from './Librairies';
+import { Row } from 'react-bootstrap';
 import { API } from '../CrudCrudAPI/API';
 
 export default function ManageLibrairies() {
@@ -25,10 +26,17 @@ export default function ManageLibrairies() {
   }
 
   return (
-    <div>
+    <Row>
       {donneesRecues.map((key, i) => (
-        <Librairies nom={key.nom} id={key._id} key={key._id}></Librairies>
+        <Librairies
+          nom={key.nom}
+          id={key._id}
+          description={key.description}
+          logo={key.logo}
+          lien={key.lien}
+          key={key._id}
+        ></Librairies>
       ))}
-    </div>
+    </Row>
   );
 }

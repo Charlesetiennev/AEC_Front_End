@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Card, Image } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
+import { Card, Col } from 'react-bootstrap';
 
 export class Librairies extends React.Component {
   constructor(props) {
@@ -10,15 +11,27 @@ export class Librairies extends React.Component {
   render() {
     return (
       <>
-        <Card>
-          <Card.Body>
-            <Image src={this.props.photo} rounded width='125' />
-            <Link to={'FicheLibrarie/?id=' + this.props.id}>
-              <h1>{this.props.nom}</h1>
-              <p>{this.props.description}</p>
-            </Link>
-          </Card.Body>
-        </Card>
+        <Col sm='4'>
+          <Card>
+            <Card.Body>
+              <Card.Img
+                variant='top'
+                src={this.props.logo}
+                className='d-block mx-auto'
+                rounded
+                fluid
+              />
+              <NavLink to={'/AfficherLibrairie/' + this.props.id}>
+                {this.props.nom}
+              </NavLink>
+            </Card.Body>
+            <Card.Footer>
+              <NavLink to={'/ModifierLibrairie/' + this.props.id}>
+                <button>Mettre les infos a jour</button>
+              </NavLink>
+            </Card.Footer>
+          </Card>
+        </Col>
       </>
     );
   }

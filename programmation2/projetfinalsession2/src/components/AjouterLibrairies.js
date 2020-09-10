@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { API } from '../CrudCrudAPI/API';
 import { TweenLite } from 'gsap';
+import { toast } from 'react-toastify';
 
 export class AjouterLibrairies extends React.Component {
   constructor(props) {
@@ -31,7 +32,9 @@ export class AjouterLibrairies extends React.Component {
       if (response.ok) {
         const jsonResponse = await response.json();
         this.props.history.push('/');
-        //      toast.success('Ajout de la librairie ' + nomLib);
+        toast.success('Ajout de la librairie ' + nomLib, {
+          position: 'top-left',
+        });
 
         return jsonResponse;
       }
@@ -155,13 +158,13 @@ export class AjouterLibrairies extends React.Component {
                   required
                 />
               </Form.Group>
-              <Button
+              <button
                 className='accentColor'
                 type='submit'
                 onClick={this.handleAdd}
               >
                 Ajouter
-              </Button>
+              </button>
             </Form>
           </Col>
         </Row>

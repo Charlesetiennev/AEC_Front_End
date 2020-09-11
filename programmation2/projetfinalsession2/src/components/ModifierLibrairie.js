@@ -103,14 +103,14 @@ export default function ModifierLibrairie(props) {
       <h1>Modification de {donneesRecues.nom}</h1>
 
       <Row>
-        <Col sm='6'>
+        <Col xs='6'>
           <h3>
             Image Actuelle
             <br />
           </h3>
           <Image src={donneesRecues.logo} rounded fluid />
         </Col>
-        <Col sm='6'>
+        <Col xs='6'>
           <h3>
             Nouvelle Image
             <br />
@@ -120,7 +120,7 @@ export default function ModifierLibrairie(props) {
       </Row>
 
       <Row>
-        <Col sm='8'>
+        <Col xs='8'>
           <Form>
             <Form.Row>
               <Col sm={3} className='my-1'>
@@ -138,7 +138,7 @@ export default function ModifierLibrairie(props) {
                   />
                 </InputGroup>
               </Col>
-              <Col sm={3} className='my-1'>
+              <Col xs={3} className='my-1'>
                 <Form.Label htmlFor='lienModif' srOnly>
                   Lien
                 </Form.Label>

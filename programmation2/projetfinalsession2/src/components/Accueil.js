@@ -36,7 +36,7 @@ export default function Accueil() {
       <Row className='p-3' id='imageIndex'>
         {/* PREMIERE COLONE */}
         <Col
-          sm='12'
+          xs='12'
           md='6'
           lg='4'
           ref={(el) => {
@@ -44,7 +44,7 @@ export default function Accueil() {
           }}
         >
           <Row>
-            <Image src={Img1} fluid />
+            <Image src={Img1} alt='essaie' fluid />
           </Row>
           <Row>
             <Image src={Img2} fluid />
@@ -52,7 +52,7 @@ export default function Accueil() {
         </Col>
         {/* DEUXIEME COLONNE */}
         <Col
-          sm='12'
+          xs='12'
           md='6'
           lg='4'
           ref={(el) => {
@@ -74,7 +74,7 @@ export default function Accueil() {
         </Col>
         {/* TROISIEME COLONNE */}
         <Col
-          sm='12'
+          xs='12'
           md='6'
           lg='4'
           ref={(el) => {

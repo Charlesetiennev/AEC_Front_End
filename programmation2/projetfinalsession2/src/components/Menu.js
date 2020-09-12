@@ -13,15 +13,15 @@ export default function Menu() {
     TweenMax.from(logo, 0.8, { opacity: '0', x: -50, ease: Power3.easeIn });
     TweenMax.from(link1, 0.8, {
       opacity: '0',
-      y: 100,
-      ease: Power3.easeInOut,
+      y: 101,
+      ease: Power3.easeIn,
       delay: 0.2,
     });
     TweenMax.from(link2, 0.8, {
       opacity: '1',
-      y: -70,
+      y: -100,
       ease: Power3.easeIn,
-      delay: 0.4,
+      delay: 0.3,
     });
   });
   return (

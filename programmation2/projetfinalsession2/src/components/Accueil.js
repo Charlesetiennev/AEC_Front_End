@@ -1,15 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
 import { TweenMax, Power2 } from 'gsap';
-import {
-  Img2,
-  Img3,
-  Img4,
-  Img5,
-  Img6,
-  Img7,
-} from '../images/imagesAccueil/imagesAccueil';
-import Img1 from '../images/imagesAccueil/photo1.jpg';
+
+import Img1 from '../images/photo1.jpg';
+import Img2 from '../images/photo2.jpg';
+import Img3 from '../images/photo3.jpg';
+import Img4 from '../images/photo4.jpg';
+import Img5 from '../images/photo5.jpg';
+import Img6 from '../images/photo6.jpg';
+import Img7 from '../images/photo7.jpg';
 export default function Accueil() {
   let col1 = useRef(null);
   let col2 = useRef(null);

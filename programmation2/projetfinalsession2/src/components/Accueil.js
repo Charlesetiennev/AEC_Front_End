@@ -2,13 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
 import { TweenMax, Power2 } from 'gsap';
 
-import Img1 from '../images/photo1.jpg';
-import Img2 from '../images/photo2.jpg';
-import Img3 from '../images/photo3.jpg';
-import Img4 from '../images/photo4.jpg';
-import Img5 from '../images/photo5.jpg';
-import Img6 from '../images/photo6.jpg';
-import Img7 from '../images/photo7.jpg';
 export default function Accueil() {
   let col1 = useRef(null);
   let col2 = useRef(null);
@@ -29,7 +22,7 @@ export default function Accueil() {
     });
   });
 
-  // TweenMax.from(col1, 1, { opacity: '0', x: -50, ease: Power3.easeIn });
+  //TweenMax.from(col1, 1, { opacity: '0', x: -50, ease: Power3.easeIn });
   return (
     <Container fluid>
       <Row className='p-3' id='imageIndex'>
@@ -43,10 +36,10 @@ export default function Accueil() {
           }}
         >
           <Row>
-            <Image src={Img1} alt='essaie' fluid />
+            <Image src={require('../images/photo1.jpg')} alt='essaie' fluid />
           </Row>
           <Row>
-            <Image src={Img2} fluid />
+            <Image src={require('../images/photo2.jpg')} fluid />
           </Row>
         </Col>
         {/* DEUXIEME COLONNE */}
@@ -65,10 +58,11 @@ export default function Accueil() {
             </h1>
           </Row>
           <Row>
-            <Image src={Img6} fluid />
+            <div className=''></div>
+            <Image src={require('../images/photo6.jpg')} fluid />
           </Row>
           <Row>
-            <Image src={Img4} fluid />
+            <Image src={require('../images/photo4.jpg')} fluid />
           </Row>
         </Col>
         {/* TROISIEME COLONNE */}
@@ -81,13 +75,13 @@ export default function Accueil() {
           }}
         >
           <Row>
-            <Image src={Img7} fluid />
+            <Image src={require('../images/photo7.jpg')} fluid />
           </Row>
           <Row>
-            <Image src={Img5} fluid />
+            <Image src={require('../images/photo5.jpg')} fluid />
           </Row>
           <Row>
-            <Image src={Img3} fluid />
+            <Image src={require('../images/photo3.jpg')} fluid />
           </Row>
         </Col>
       </Row>

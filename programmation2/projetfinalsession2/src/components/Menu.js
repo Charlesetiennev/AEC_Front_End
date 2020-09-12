@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Nav, Navbar, Image, Col } from 'react-bootstrap';
+import { Nav, Navbar, Image, Col, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { TweenMax, Power3 } from 'gsap';
 import Logo from '../../src/images/logo/logo.jpg';
@@ -59,6 +59,10 @@ export default function Menu() {
           </NavLink>
         </Navbar>
       </Nav>
+      <Button variant='primary' size='lg' block id='boutonInstall'>
+        Installer l'application
+      </Button>
+      ;
     </>
   );
 }

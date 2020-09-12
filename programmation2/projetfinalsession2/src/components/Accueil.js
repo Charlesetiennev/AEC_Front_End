@@ -9,7 +9,7 @@ import {
   Img6,
   Img7,
 } from '../images/imagesAccueil/imagesAccueil';
-import { Img1 } from '../images/imagesAccueil/photo1.jpg';
+import Img1 from '../images/imagesAccueil/photo1.jpg';
 export default function Accueil() {
   let col1 = useRef(null);
   let col2 = useRef(null);

@@ -24,6 +24,10 @@ function App() {
         <Row>
           <Col xs='12'>
             <Switch className='rowafficher'>
+              <Redirect
+                from='/AEC_Front_End2/programmation2/projetfinalsession2/build/index.html'
+                to='/'
+              />
               <Route path='/' exact component={Accueil} />
               <Route path='/2' component={Accueil} />
               <Route path='/listeLibrairies' component={ManageLibrairies} />
@@ -33,10 +37,6 @@ function App() {
                 component={ModifierLibrairie}
               />
               <Route component={Erreur404} />
-              <Redirect
-                from='/AEC_Front_End2/programmation2/projetfinalsession2/build/index.html'
-                to='/'
-              />
             </Switch>
           </Col>
         </Row>

@@ -36,7 +36,11 @@ export default function Accueil() {
           }}
         >
           <Row>
-            <Image src={require('../images/photo1.jpg')} alt='essaie' fluid />
+            <Image
+              src='https://image.freepik.com/free-photo/programmer-coding-software-development-working-project-it_1423-2973.jpg'
+              alt='essaie'
+              fluid
+            />
           </Row>
           <Row>
             <Image src={require('../images/photo2.jpg')} alt='essaie' fluid />

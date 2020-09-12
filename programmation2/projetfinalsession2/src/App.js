@@ -10,8 +10,11 @@ import { Row, Col, Container } from 'react-bootstrap';
 import { Route, Switch } from 'react-router-dom';
 import ManageLibrairies from './components/ManageLibrairies';
 import ModifierLibrairie from './components/ModifierLibrairie';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  let location = useLocation();
+  console.log(location.pathname);
   return (
     <>
       <Container fluid>

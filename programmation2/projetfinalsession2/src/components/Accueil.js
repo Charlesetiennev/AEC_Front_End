@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col, Image, Container } from 'react-bootstrap';
 import { TweenMax, Power2 } from 'gsap';
 import {
   Img2,
@@ -32,7 +32,7 @@ export default function Accueil() {
 
   // TweenMax.from(col1, 1, { opacity: '0', x: -50, ease: Power3.easeIn });
   return (
-    <>
+    <Container fluid>
       <Row className='p-3' id='imageIndex'>
         {/* PREMIERE COLONE */}
         <Col
@@ -92,6 +92,6 @@ export default function Accueil() {
           </Row>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 }

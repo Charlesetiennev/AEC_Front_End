@@ -81,7 +81,7 @@ export class AjouterLibrairies extends React.Component {
   }
   render() {
     return (
-      <>
+      <Container>
         <h1
           ref={(div) => (this.titre = div)}
           className='text-center accentColorText'
@@ -168,7 +168,7 @@ export class AjouterLibrairies extends React.Component {
             </Form>
           </Col>
         </Row>
-      </>
+      </Container>
     );
   }
 }

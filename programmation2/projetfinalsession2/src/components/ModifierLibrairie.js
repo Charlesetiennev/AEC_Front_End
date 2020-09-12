@@ -7,6 +7,7 @@ import {
   Image,
   Row,
   Col,
+  Container,
 } from 'react-bootstrap';
 import { API } from '../CrudCrudAPI/API';
 import { toast } from 'react-toastify';
@@ -99,7 +100,7 @@ export default function ModifierLibrairie(props) {
     setPhotos(photos);
   }
   return (
-    <>
+    <Container>
       <h1>Modification de {donneesRecues.nom}</h1>
 
       <Row>
@@ -179,6 +180,6 @@ export default function ModifierLibrairie(props) {
           <Button onClick={SupprLibrairie}>Effacer</Button>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 }

@@ -11,7 +11,7 @@ export class Librairies extends React.Component {
   render() {
     return (
       <>
-        <Col sm='4'>
+        <Col xs='4'>
           <Card>
             <Card.Body>
               <Card.Img

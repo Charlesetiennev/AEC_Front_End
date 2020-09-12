@@ -7,7 +7,7 @@ import { AjouterLibrairies } from './components/AjouterLibrairies';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Row, Col, Container } from 'react-bootstrap';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import ManageLibrairies from './components/ManageLibrairies';
 import ModifierLibrairie from './components/ModifierLibrairie';
 import { useLocation } from 'react-router-dom';
@@ -33,6 +33,10 @@ function App() {
                 component={ModifierLibrairie}
               />
               <Route component={Erreur404} />
+              <Redirect
+                from='/AEC_Front_End2/programmation2/projetfinalsession2/build/index.html'
+                to='/'
+              />
             </Switch>
           </Col>
         </Row>

@@ -39,7 +39,7 @@ export default function Accueil() {
             <Image src={require('../images/photo1.jpg')} alt='essaie' fluid />
           </Row>
           <Row>
-            <Image src={require('../images/photo2.jpg')} fluid />
+            <Image src={require('../images/photo2.jpg')} alt='essaie' fluid />
           </Row>
         </Col>
         {/* DEUXIEME COLONNE */}

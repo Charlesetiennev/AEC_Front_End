@@ -59,8 +59,8 @@ export default function Menu() {
           </NavLink>
         </Navbar>
       </Nav>
-      <Button variant='primary' size='lg' block id='boutonInstall'>
-        Installer l'application
+      <Button size='lg' block id='boutonInstall'>
+        Installer l'app
       </Button>
       ;
     </>

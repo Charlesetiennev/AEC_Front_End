@@ -26,9 +26,6 @@ export default function Menu() {
   });
   return (
     <>
-      <Button variant='primary' size='lg' block id='boutonInstall'>
-        Installer l'application
-      </Button>
       <Nav>
         <Navbar className='p-0'>
           <NavLink
@@ -62,7 +59,6 @@ export default function Menu() {
           </NavLink>
         </Navbar>
       </Nav>
-      ;
     </>
   );
 }

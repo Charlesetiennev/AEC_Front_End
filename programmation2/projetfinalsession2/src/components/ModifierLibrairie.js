@@ -158,7 +158,6 @@ export default function ModifierLibrairie(props) {
             <Form.Group controlId='descriptionModif'>
               <Form.Label>Description </Form.Label>
               <Form.Control
-                id='descriptionModif'
                 placeholder='Description de la librairie'
                 defaultValue={donneesRecues.description}
               />
@@ -166,7 +165,6 @@ export default function ModifierLibrairie(props) {
             <Form.Group controlId='logoModif'>
               <Form.Label>URL du logo</Form.Label>
               <Form.Control
-                id='logoModif'
                 type='text'
                 placeholder='Entrer une URL valide'
                 onBlur={handlePhoto}

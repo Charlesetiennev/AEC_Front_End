@@ -1,128 +1,103 @@
+// Background
+canvas
+  position: fixed
+  display: block
+  width: 100%
+  min-height: 100%
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: -1
+
+  
+@import './styles/menu'
+  
 $mainColor : #01686B 
 $accentColor: #F46060
-.card-img-top
-  max-width: 22vh
-#root
-  overflow: hidden
-body
-  background: radial-gradient(circle, rgba(1,104,107,1) 55%, rgba(131,197,190,1) 100%)
-#imageIndex
-  img
-    padding: .7rem  
-.navbar 
-  width: 100%
-  a
-    width: 33%
-    display: inline
-    font-size: 2rem
-    color: #fff
-    
-    &:hover
-      text-decoration: none 
-      color: #AAC0AF
-      transition-duration: .8s
-  img
-    margin-left: 3rem
-    width: 10vh
-    align-self: start  
-    &:hover
-      transform: 
-      transform: scale(1.5)
-      transition-duration: .8s
-.accentColorText
-  color: $accentColor
-h1
-  font-family: 'Syne', sans-serif 
-input
-  opacity: .7
-  
-button
-  background-color: $accentColor!important  
-.bg1
-  width: 25%
-  height: 15vh
-  background-image: url('../src/images/photo1.jpg')
-  background-size: cover
+$mainFont: 'Syne', sans-serif
+$secondaryFont : 'Bebas Neue', cursive
 
 $screen-sm-min: 576px
-
-// Small tablets (portrait view)
 $screen-md-min: 768px
-
-// Tablets and small desktops
 $screen-lg-min: 992px
-
-// Large tablets and desktops
 $screen-xl-min: 1200px
-
-
-
-// Small devices
 @mixin sm
   @media (min-width: #{$screen-sm-min})
     @content
-
-// Medium devices
 @mixin md
   @media (min-width: #{$screen-md-min})
     @content
-
-// Large devices
 @mixin lg
   @media (min-width: #{$screen-lg-min})
     @content
-
-// Extra large devices
 @mixin xl
   @media (min-width: #{$screen-xl-min})
     @content
-
-// Custom devices
 @mixin rwd($screen)
   @media (min-width: $screen+'px' )
     @content
 
-
-
-
-//exemple d'utilisation
+  
+  
+#root
+  overflow: hidden
+  min-height: 100vh
 #boutonInstall
   width: 100%
+body
+  padding-bottom: 3rem  
+
+// General
+.hrCouleur  
+  border: 1px solid $mainColor
+  opacity: .4
+
 
 .accentColorText
-  @include sm 
-  //  color: blue  
+  color: $accentColor
+
+button
+  background-color: $accentColor!important
+
+// Acceuil
+#imageIndex
+  img
+    padding: .7rem
+
 .hidebeforemd
-  @include sm
-    display: none
+  display: none
   @include md
     display: grid
-  
-  
-  
-  // .container
-//   padding: 0 15px
 
-//   @include sm
-//     padding: 0 20px
+// Affichage des librairies
+.card
+  background-image: url('https://i.pinimg.com/originals/e3/21/6b/e3216b575d5e92031eaf5c1a067f9d31.jpg')
+  background-size: cover
 
-//   @include lg
-//     margin-left: auto
-//     margin-right: auto
-//     max-width: 1100px
+// Formulaire
+input
+  opacity: .4
 
-//   @include rwd(1400)
-//     margin-bottom: 20px
-//     margin-top: 20px
+label
+  font-size: 2rem
+  font-family: $mainFont
+.titrePage
+  font-family: $secondaryFont
+  font-size: 3rem
+.apercu
+  display: none
+  @include md
+    display: grid
 
+// Footer
+.footer
+  background-color: rgba(102, 16, 31,0.2)
+  position: fixed!important
+  height: 3rem
+  right: 0px
+  left: 0
+  bottom: 0
 
-
-
-
-
-
-
-
-
-//  https://charlesetiennev.github.io/AEC_Front_End2/programmation2/projetfinalsession2/build/index.html
-//  https://charlesetiennev.github.io/AEC_Front_End2/programmation2/projetfinalsession2/public/index.html
+  h4
+    color: #FFE3DC

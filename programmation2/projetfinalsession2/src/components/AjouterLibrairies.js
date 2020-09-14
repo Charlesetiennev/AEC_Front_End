@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col, Form, Image } from 'react-bootstrap';
 import { API } from '../CrudCrudAPI/API';
 import { TweenLite } from 'gsap';
 import { toast } from 'react-toastify';
@@ -8,7 +8,6 @@ export class AjouterLibrairies extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.handleAdd = this.handleAdd.bind(this);
     // H1Gsap
     this.titre = null;
     this.titreFromTop = null;
@@ -31,7 +30,7 @@ export class AjouterLibrairies extends React.Component {
       });
       if (response.ok) {
         const jsonResponse = await response.json();
-        this.props.history.push('/');
+        this.props.history.push('/listeLibrairies');
         toast.success('Ajout de la librairie ' + nomLib, {
           position: 'top-left',
         });
@@ -79,19 +78,21 @@ export class AjouterLibrairies extends React.Component {
     this.titreFromTop = TweenLite.from(this.titre, 1, { y: -100 });
     this.formFromBot = TweenLite.from(this.form, 1, { y: 100 });
   }
+
   render() {
     return (
       <Container>
         <h1
           ref={(div) => (this.titre = div)}
-          className='text-center accentColorText'
+          className='text-center accentColorText titrePage'
         >
-          Ajouter une librairies Javascript a la liste <hr />
+          Ajouter une librairies Javascript a la liste
         </h1>
+
         {/* APERCU CARD */}
-        <div>
-          <Row className='w-75 mx-auto '>
-            <Col sm='2'>
+        <div className='apercu '>
+          <Row className='w-75 mx-auto'>
+            <Col xs='6'>
               <Row>
                 {this.state.photo !== '' && (
                   <Image
@@ -108,20 +109,20 @@ export class AjouterLibrairies extends React.Component {
                 )}
               </Row>
             </Col>
-            <Col sm='4'>
+            <Col xs='6'>
               {this.state.description !== '' && (
                 <p className='p-3'>{this.state.description}</p>
               )}
             </Col>
-            <Col sm='2' className='d-flex align-items-end pb-3'>
+            <Col lg='2' className='d-flex align-items-end pb-3'>
               {this.state.lien !== '' && <a href='#'>{this.state.lien}</a>}
             </Col>
           </Row>
         </div>
         {/* FORM */}
         <Row className='p-3'>
-          <Col sm={{ span: 4, offset: 4 }}>
-            <Form ref={(div) => (this.form = div)}>
+          <Col lg={{ span: 8, offset: 2 }}>
+            <Form ref={(div) => (this.form = div)} name='ajout'>
               <Form.Group controlId='logoLibrairies'>
                 <Form.Label>Logo</Form.Label>
                 <Form.Control
@@ -129,6 +130,7 @@ export class AjouterLibrairies extends React.Component {
                   placeholder='Url contenant le logo'
                   onBlur={this.handlePhoto.bind(this)}
                   required
+                  autoFocus
                 />
               </Form.Group>
               <Form.Group controlId='nomLibrairies'>
@@ -137,7 +139,9 @@ export class AjouterLibrairies extends React.Component {
                   type='text'
                   placeholder='Entrer le nom de la librairie'
                   onBlur={this.handleNom.bind(this)}
-                  required
+                  min='5'
+                  max='25'
+                  required='required'
                 />
               </Form.Group>
               <Form.Group controlId='descriptionLibrairies'>
@@ -161,7 +165,7 @@ export class AjouterLibrairies extends React.Component {
               <button
                 className='accentColor'
                 type='submit'
-                onClick={this.handleAdd}
+                onClick={this.handleAdd.bind(this)}
               >
                 Ajouter
               </button>

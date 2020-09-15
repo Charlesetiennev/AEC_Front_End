@@ -1,3 +1,6 @@
+// Accueil.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
 import React, { useEffect, useRef } from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
 import { TweenMax, Power2 } from 'gsap';

@@ -1,8 +1,10 @@
+// Menu.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
 import React, { useEffect, useRef } from 'react';
-import { Row, Col, Nav, Navbar, Image } from 'react-bootstrap';
+import { Row, Col, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { TweenMax, Power3 } from 'gsap';
-import Logo from '../../src/images/logo/logo.jpg';
 
 export default function Menu() {
   let logo = useRef(null);

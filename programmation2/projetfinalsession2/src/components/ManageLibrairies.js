@@ -1,3 +1,6 @@
+// ManageLibrairies.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
 import React, { useState, useEffect } from 'react';
 import { Librairies } from './Librairies';
 import { API } from '../CrudCrudAPI/API';

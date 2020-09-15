@@ -1,3 +1,7 @@
+// Install.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
+
 let deferredInstallPrompt = null;
 const installButton = document.getElementById('boutonInstall');
 installButton.addEventListener('click', installPWA);

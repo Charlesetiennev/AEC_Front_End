@@ -1,18 +1,23 @@
+// App.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
+
 import React from 'react';
+import { Route, Switch, Redirect, useLocation } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+// BOOTSTRAP
+import 'react-toastify/dist/ReactToastify.css';
+import { Row, Container } from 'react-bootstrap';
+// COMPONENTS
 import './App.sass';
 import Accueil from './components/Accueil';
 import Menu from './components/Menu';
-import Erreur404 from './components/Erreur404';
-import { AjouterLibrairies } from './components/AjouterLibrairies';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { Row, Container } from 'react-bootstrap';
-import { Route, Switch, Redirect } from 'react-router-dom';
 import ManageLibrairies from './components/ManageLibrairies';
 import ModifierLibrairie from './components/ModifierLibrairie';
-import { useLocation } from 'react-router-dom';
 import AfficherLibrairie from './components/AfficherLibrairie';
+import { AjouterLibrairies } from './components/AjouterLibrairies';
 import { Footer } from './components/footer';
+import Erreur404 from './components/Erreur404';
 
 function App() {
   let location = useLocation();

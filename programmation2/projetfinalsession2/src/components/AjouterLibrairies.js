@@ -1,3 +1,6 @@
+// AjouterLibrairies.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
 import React from 'react';
 import { Container, Row, Col, Form, Image } from 'react-bootstrap';
 import { API } from '../CrudCrudAPI/API';

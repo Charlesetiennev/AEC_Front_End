@@ -1,3 +1,6 @@
+// AfficherLibrairie.js
+// Par Charles-Etienne Villemure
+// Le 14 Septembre 2020
 import React, { useEffect, useState } from 'react';
 import { API } from '../CrudCrudAPI/API';
 import { Row, Col, Image } from 'react-bootstrap';

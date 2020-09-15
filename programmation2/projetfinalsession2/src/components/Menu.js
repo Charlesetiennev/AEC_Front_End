@@ -32,15 +32,15 @@ export default function Menu() {
       <Nav>
         <Navbar className='p-0'>
           <Row className='w-100'>
-            <Col
-              xs='12'
-              md='4'
-              className='text-center pt-3'
-              ref={(el) => {
-                logo = el;
-              }}
-            >
-              <NavLink exact to='/' className='navbar-brand'>
+            <Col xs='12' md='4' className='text-center pt-3'>
+              <NavLink
+                exact
+                to='/'
+                className='navbar-brand'
+                ref={(el) => {
+                  logo = el;
+                }}
+              >
                 <h2>
                   Code <br />
                 </h2>
@@ -48,27 +48,25 @@ export default function Menu() {
                 {/* <Image src={Logo} roundedCircle fluid /> */}
               </NavLink>
             </Col>
-            <Col
-              className='text-center pt-3'
-              xs='12'
-              md='4'
-              ref={(el) => {
-                link1 = el;
-              }}
-            >
-              <NavLink to='/listeLibrairies' activeStyle={activeStyle}>
+            <Col className='text-center pt-3' xs='12' md='4'>
+              <NavLink
+                to='/listeLibrairies'
+                activeStyle={activeStyle}
+                ref={(el) => {
+                  link1 = el;
+                }}
+              >
                 Liste des meilleurs Librairies Javascript
               </NavLink>
             </Col>
-            <Col
-              className='text-center pt-3'
-              xs='12'
-              md='4'
-              ref={(el) => {
-                link2 = el;
-              }}
-            >
-              <NavLink to='/ajouterLibrairies' activeStyle={activeStyle}>
+            <Col className='text-center pt-3' xs='12' md='4'>
+              <NavLink
+                to='/ajouterLibrairies'
+                activeStyle={activeStyle}
+                ref={(el) => {
+                  link2 = el;
+                }}
+              >
                 Ajouter une Librairies
               </NavLink>
             </Col>

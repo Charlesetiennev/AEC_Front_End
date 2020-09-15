@@ -32,11 +32,11 @@ export default function Menu() {
               xs='12'
               md='4'
               className='text-center pt-3'
-              ref={(el) => {
-                logo = el;
-              }}
+
             >
-              <NavLink exact to='/' className='navbar-brand'>
+              <NavLink exact to='/' className='navbar-brand' ref={(el) => {
+                logo = el;
+              }}>
                 <h2>
                   Code <br />
                 </h2>

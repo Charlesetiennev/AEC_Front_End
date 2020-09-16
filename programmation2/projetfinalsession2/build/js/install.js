@@ -1,7 +1,6 @@
 // Install.js
 // Par Charles-Etienne Villemure
 // Le 14 Septembre 2020
-
 let deferredInstallPrompt = null;
 const installButton = document.getElementById('boutonInstall');
 installButton.addEventListener('click', installPWA);
@@ -9,6 +8,7 @@ installButton.addEventListener('click', installPWA);
 // Add event listener for beforeinstallprompt event
 window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
 
+let deferredInstallPrompt = evt;
 /**
  * Event handler for beforeinstallprompt event.
  *   Saves the event & shows install button.

@@ -4,24 +4,30 @@
 import React, { useEffect, useRef } from 'react';
 import { Row, Col, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import { TweenMax, Power3 } from 'gsap';
+import { TweenMax, Power2 } from 'gsap';
 
 export default function Menu() {
+  const activeStyle = { color: '#5BBA6F', textDecoration: 'underline' };
+
   let logo = useRef(null);
   let link1 = useRef(null);
   let link2 = useRef(null);
 
-  const activeStyle = { color: '#5BBA6F', textDecoration: 'underline' };
-  useEffect(() => {
-    TweenMax.from(logo, 0.8, { opacity: '0', x: -50, ease: Power3.easeIn });
 
-
-  });
   useEffect(() => {
-    TweenMax.from(link1, 0.8, { opacity: '0', y: 101, ease: Power3.easeIn, delay: 0.2 });
-  });
-  useEffect(() => {
-    TweenMax.from(link2, 0.8, { opacity: '0', y: -100, ease: Power3.easeInOut, delay: 0.3 });
+    TweenMax.from(logo, 1, { opacity: '0', y: 70, ease: Power2.easeIn });
+    TweenMax.from(link1, 1, {
+      opacity: '0',
+      delay: 0.2,
+      y: 70,
+      ease: Power2.easeIn,
+    });
+    TweenMax.from(link2, 1, {
+      opacity: '0',
+      delay: 0.4,
+      y: 70,
+      ease: Power2.easeIn,
+    });
   });
   return (
     <>

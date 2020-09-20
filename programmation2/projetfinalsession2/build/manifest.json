@@ -3,9 +3,10 @@
   "name": "Projet final Integration et Programmation WEB",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64",
-      "type": "image/x-icon"
+      "src": "maskable_icon128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any maskable"
     },
     {
       "src": "maskable_icon192.png",

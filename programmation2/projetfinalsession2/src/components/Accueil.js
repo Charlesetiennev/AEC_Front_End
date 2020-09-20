@@ -25,7 +25,6 @@ export default function Accueil() {
     });
   });
 
-  //TweenMax.from(col1, 1, { opacity: '0', x: -50, ease: Power3.easeIn });
   return (
     <Container fluid>
       <Row className='p-3' id='imageIndex'>

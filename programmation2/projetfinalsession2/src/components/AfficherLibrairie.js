@@ -15,7 +15,6 @@ export default function AfficherLibrairie(props) {
   const [libID, setlibID] = useState(
     props.location.pathname.substring(19, props.location.pathname.length)
   );
-  console.log(libID);
   useEffect(() => {
     getLibrairieInfos();
   }, []);

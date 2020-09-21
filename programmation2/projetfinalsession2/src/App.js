@@ -21,7 +21,6 @@ import Erreur404 from './components/Erreur404';
 
 function App() {
   let location = useLocation();
-  console.log(location.pathname);
   return (
     <>
       <Container fluid>

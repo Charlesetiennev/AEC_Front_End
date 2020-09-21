@@ -32,7 +32,7 @@ export default function Menu() {
     <>
       <Nav>
         <Navbar className='p-0'>
-          <Row className='w-100'>
+          <Row className=''>
             <Col xs='12' md='4' className='text-center pt-3'>
               <NavLink
                 exact

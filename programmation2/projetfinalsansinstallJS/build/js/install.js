@@ -8,7 +8,6 @@ installButton.addEventListener('click', installPWA);
 // Add event listener for beforeinstallprompt event
 window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
 
-let deferredInstallPrompt = evt;
 /**
  * Event handler for beforeinstallprompt event.
  *   Saves the event & shows install button.

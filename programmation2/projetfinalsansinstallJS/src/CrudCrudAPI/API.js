@@ -1,6 +1,6 @@
 // CrudCrudAPI
 // Par Charles-Etienne Villemure
-// Le 14 Septembre 2020
+// Le 25 Septembre 2020
 export const API =
   'https://crudcrud.com/api/331fcae8c5f04a02abd39b8d1383d7de/lib/';
 

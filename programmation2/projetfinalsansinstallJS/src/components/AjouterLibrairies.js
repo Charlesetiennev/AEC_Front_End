@@ -1,6 +1,6 @@
 // AjouterLibrairies.js
 // Par Charles-Etienne Villemure
-// Le 14 Septembre 2020
+// Le 25 Septembre 2020
 import React from 'react';
 import { Container, Row, Col, Form, Image } from 'react-bootstrap';
 import { API } from '../CrudCrudAPI/API';
@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 export class AjouterLibrairies extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { errors: {} };
     // H1Gsap
     this.titre = null;
     this.titreFromTop = null;
@@ -18,7 +18,22 @@ export class AjouterLibrairies extends React.Component {
     this.form = null;
     this.formFromBot = null;
   }
+  //Validation Formulaire
+  formulaireEstValide(nomLib, logoLib, descriptionLib, lienLib) {
+    const _errors = {};
 
+    if (!nomLib || nomLib.length < 5 || nomLib.length > 25)
+      _errors.nomLib = 'Le nom doit contenir entre 5 et 25 caracteres';
+    if (!logoLib)
+      _errors.logoLib = "L'URL d'une photo avec le logo est obligatoire";
+    if (!descriptionLib)
+      _errors.descriptionLib = 'La description est obligatoire';
+    if (!lienLib)
+      _errors.lienLib = 'Le lien pour la documentation est obligatoire';
+    this.setState({ errors: _errors });
+    return Object.keys(_errors).length === 0;
+  }
+  // Ajout
   async AjouterLibrairies(nomLib, logoLib, descriptionLib, lienLib) {
     try {
       const response = await fetch(API, {
@@ -54,10 +69,11 @@ export class AjouterLibrairies extends React.Component {
     const descriptionLib = document.getElementById('descriptionLibrairies')
       .value;
     const lienLib = document.getElementById('lienLibrairies').value;
-
-    this.AjouterLibrairies(nomLib, logoLib, descriptionLib, lienLib);
+    if (this.formulaireEstValide(nomLib, logoLib, descriptionLib, lienLib)) {
+      this.AjouterLibrairies(nomLib, logoLib, descriptionLib, lienLib);
+    }
   }
-
+  // Apercu Card
   handlePhoto(event) {
     const photos = document.getElementById('logoLibrairies').value;
     this.setState({ photo: photos });
@@ -77,6 +93,7 @@ export class AjouterLibrairies extends React.Component {
     const lienApercu = document.getElementById('lienLibrairies').value;
     this.setState({ lien: lienApercu });
   }
+  // GSAP
   componentDidMount() {
     this.titreFromTop = TweenLite.from(this.titre, 1, { y: -100 });
     this.formFromBot = TweenLite.from(this.form, 1, { y: 100 });
@@ -125,16 +142,23 @@ export class AjouterLibrairies extends React.Component {
         {/* FORM */}
         <Row className='p-3'>
           <Col lg={{ span: 8, offset: 2 }}>
-            <Form ref={(div) => (this.form = div)} name='ajout'>
+            <Form
+              ref={(div) => (this.form = div)}
+              name='ajout'
+              className='text-white'
+            >
               <Form.Group controlId='logoLibrairies'>
                 <Form.Label>Logo</Form.Label>
                 <Form.Control
                   type='text'
                   placeholder='Url contenant le logo'
                   onBlur={this.handlePhoto.bind(this)}
-                  required
+                  isInvalid={!!this.state.errors.logoLib}
                   autoFocus
                 />
+                <Form.Control.Feedback type='invalid'>
+                  {this.state.errors.logoLib}
+                </Form.Control.Feedback>
               </Form.Group>
               <Form.Group controlId='nomLibrairies'>
                 <Form.Label>Nom de la librairies</Form.Label>
@@ -142,10 +166,11 @@ export class AjouterLibrairies extends React.Component {
                   type='text'
                   placeholder='Entrer le nom de la librairie'
                   onBlur={this.handleNom.bind(this)}
-                  min='5'
-                  max='25'
-                  required='required'
+                  isInvalid={!!this.state.errors.nomLib}
                 />
+                <Form.Control.Feedback type='invalid'>
+                  {this.state.errors.nomLib}
+                </Form.Control.Feedback>
               </Form.Group>
               <Form.Group controlId='descriptionLibrairies'>
                 <Form.Label>Description </Form.Label>
@@ -153,8 +178,11 @@ export class AjouterLibrairies extends React.Component {
                   type='text'
                   placeholder='Entrez un resumer des fonctionnalites de la librairies'
                   onBlur={this.handleDescription.bind(this)}
-                  required
+                  isInvalid={!!this.state.errors.descriptionLib}
                 />
+                <Form.Control.Feedback type='invalid'>
+                  {this.state.errors.descriptionLib}
+                </Form.Control.Feedback>
               </Form.Group>
               <Form.Group controlId='lienLibrairies'>
                 <Form.Label>Lien</Form.Label>
@@ -162,8 +190,11 @@ export class AjouterLibrairies extends React.Component {
                   type='text'
                   placeholder="Entrez l'url pour la docummentation"
                   onBlur={this.handleLien.bind(this)}
-                  required
+                  isInvalid={!!this.state.errors.lienLib}
                 />
+                <Form.Control.Feedback type='invalid'>
+                  {this.state.errors.lienLib}
+                </Form.Control.Feedback>
               </Form.Group>
               <button
                 className='accentColor'

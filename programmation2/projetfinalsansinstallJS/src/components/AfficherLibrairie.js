@@ -33,7 +33,7 @@ export default function AfficherLibrairie(props) {
   }
   return (
     <>
-      <Col xs='12' className='pb-5'>
+      <Col xs='12' className='p-5'>
         <Link to='/listeLibrairies'>
           <button>Retour à la liste</button>
         </Link>

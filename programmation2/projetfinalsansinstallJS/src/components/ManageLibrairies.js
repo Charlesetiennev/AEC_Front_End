@@ -29,7 +29,7 @@ export default function ManageLibrairies() {
 
   return (
     <>
-      <h1>
+      <h1 className='text-white'>
         Liste des librairies et description sont une source de :
         https://www.codeur.com/blog/meilleures-librairies-javascript/{' '}
       </h1>{' '}

@@ -12,6 +12,7 @@ import {
   Col,
   Container,
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { API } from '../CrudCrudAPI/API';
 import { toast } from 'react-toastify';
 
@@ -104,6 +105,9 @@ export default function ModifierLibrairie(props) {
   }
   return (
     <Container>
+      <Link exact to='/listeLibrairies' className='btn btn-primary'>
+        Annuler la modification
+      </Link>
       <h1>Modification de {donneesRecues.nom}</h1>
 
       <Row>

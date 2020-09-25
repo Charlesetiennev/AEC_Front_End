@@ -18,7 +18,7 @@ export class Librairies extends React.Component {
   render() {
     return (
       <>
-        <Col xs='12' sm='6' md='4' lg='2'>
+        <Col xs='12' sm='6' md='4' lg='2' className='py-3'>
           <Card ref={(div) => (this.card = div)}>
             <Card.Body>
               <Card.Img

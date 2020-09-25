@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Row, Container } from 'react-bootstrap';
 // COMPONENTS
-import './App.sass';
+import './styles/App.sass';
 import Accueil from './components/Accueil';
 import Menu from './components/Menu';
 import ManageLibrairies from './components/ManageLibrairies';

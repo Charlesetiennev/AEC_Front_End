@@ -41,8 +41,10 @@ $screen-xl-min: 1200px
 @mixin rwd($screen)
   @media (min-width: $screen+'px' )
     @content
-
-  
+// Bouton
+#boutonInstall
+  visibility: hidden
+    
   
 #root
   overflow: hidden
@@ -87,7 +89,7 @@ button
   background-image: url('https://i.pinimg.com/originals/e3/21/6b/e3216b575d5e92031eaf5c1a067f9d31.jpg')
   background-size: cover
   padding: 1rem
-
+  height: 45vh
 // Formulaire
 input
   opacity: .4

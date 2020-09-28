@@ -2,7 +2,7 @@
 // Par Charles-Etienne Villemure
 // Le 25 Septembre 2020
 export const API =
-  'https://crudcrud.com/api/4aac76d94015425592881f4e4d2420bf/lib/';
+  'https://crudcrud.com/api/723f33c1f9cb4632923178279182a82b/lib/';
 
 // DONNEES POUR L'API
 

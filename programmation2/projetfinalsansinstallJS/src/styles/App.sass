@@ -85,11 +85,17 @@ button
     display: grid
 
 // Affichage des librairies
+.imagePreview
+  height: 25vh  
 .card
   background-image: url('https://i.pinimg.com/originals/e3/21/6b/e3216b575d5e92031eaf5c1a067f9d31.jpg')
   background-size: cover
   padding: 1rem
-  height: 45vh
+  height: 50vh
+
+  @include md
+    height: 50vh
+
 // Formulaire
 input
   opacity: .4

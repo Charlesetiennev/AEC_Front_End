@@ -3,7 +3,7 @@
 // Le 14 Septembre 2020
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Image } from 'react-bootstrap';
 import { TweenLite } from 'gsap';
 
 export class Librairies extends React.Component {
@@ -18,15 +18,14 @@ export class Librairies extends React.Component {
   render() {
     return (
       <>
-        <Col xs='12' sm='6' md='4' lg='2' className='py-3'>
+        <Col xs='12' sm='6' md='4' lg='3' className='py-3'>
           <Card ref={(div) => (this.card = div)}>
             <Card.Body>
               <Card.Img
                 variant='top'
                 src={this.props.logo}
-                className='d-block mx-auto'
+                className='d-block mx-auto imagePreview '
                 rounded='true'
-                fluid='true'
               />
 
               <NavLink

@@ -1,0 +1,80 @@
+// Importation Polices Section 1
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,300&family=Slabo+27px&display=swap')
+
+body
+    margin: 0
+
+.navBar
+    ul
+        list-style-type: none
+        overflow: hidden
+        padding: 2vh
+        margin: 0
+        background-color: #D9DCD6
+    li
+        display: inline
+        // padding: 2vh
+        a
+            text-decoration: none
+            color: #272838
+            padding: 2vh
+            // background-color: #272838
+
+#sectionUn
+    // TEMPORAIRE
+    overflow: hidden
+    height: 100vh
+    display: grid
+    grid-template-columns: 15% 1fr 1fr 15%
+    grid-template-rows: 15% 1fr 1fr 1fr
+    .description
+        grid-row: 2/4
+        grid-column: 2/3
+        p
+            font-family: 'Cormorant Garamond', serif
+            font-size: 1.4rem
+        h1
+            font-family: 'Slabo 27px', serif
+        h3
+            font-family: 'Cormorant Garamond', serif
+        img
+            border-radius: 50%
+            width: 15vh
+            height: 15vh
+    img
+        grid-row: 2/4
+        grid-column: 3/4
+                // sass styles/style.sass styles/style.css
+
+#sectionDeux
+    background-color: #94C9A9
+    height: 100vh
+    display: flex
+    justify-content: space-around
+
+.card
+    margin: 5vh
+    &:hover
+        .second
+            transform: translateY(0)
+            opacity: 1
+            margin-top: -3px
+    .first
+        // transform: translateY(100px)
+    .second
+        transform: translateY(-100px)
+        opacity: 0
+        background-color: beige
+        .techUtilise
+            display: flex
+        p
+            margin: 0
+    .revealProject
+        transition: 3s
+    // box-shadow: 2px 7px 11px 0px rgba(30, 50, 50, 0.96)
+    h4
+        background-color: white
+        padding: 3px
+        margin: 0
+        margin-top: -3px
+        text-align: center

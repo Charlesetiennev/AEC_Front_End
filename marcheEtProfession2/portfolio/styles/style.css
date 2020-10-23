@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,300&family=Slabo+27px&display=swap");
+body {
+  margin: 0;
+}
+
+.navBar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 2vh;
+  margin: 0;
+  background-color: #D9DCD6;
+}
+.navBar li {
+  display: inline;
+}
+.navBar li a {
+  text-decoration: none;
+  color: #272838;
+  padding: 2vh;
+}
+
+#sectionUn {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 15%;
+  grid-template-rows: 15% 1fr 1fr 1fr;
+}
+#sectionUn .description {
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+#sectionUn .description p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+}
+#sectionUn .description h1 {
+  font-family: "Slabo 27px", serif;
+}
+#sectionUn .description h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+#sectionUn .description img {
+  border-radius: 50%;
+  width: 15vh;
+  height: 15vh;
+}
+#sectionUn img {
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+
+#sectionDeux {
+  background-color: #94C9A9;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 5vh;
+}
+.card:hover .second {
+  transform: translateY(0);
+  opacity: 1;
+  margin-top: -3px;
+}
+.card .second {
+  transform: translateY(-100px);
+  opacity: 0;
+  background-color: beige;
+}
+.card .second .techUtilise {
+  display: flex;
+}
+.card .second p {
+  margin: 0;
+}
+.card .revealProject {
+  transition: 3s;
+}
+.card h4 {
+  background-color: white;
+  padding: 3px;
+  margin: 0;
+  margin-top: -3px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

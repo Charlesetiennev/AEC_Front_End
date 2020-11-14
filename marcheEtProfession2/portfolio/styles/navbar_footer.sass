@@ -1,0 +1,39 @@
+
+$nav_footerColor: #D9DCD6
+
+.navBar
+    position: fixed
+    top: 0
+    width: 100%
+    ul
+        list-style-type: none
+        overflow: hidden
+        padding: 2vh
+        margin: 0
+        background-color: $nav_footerColor
+    li
+        display: inline
+        a
+            text-decoration: none
+            color: #272838
+            padding: 2vh
+    button
+        border: none
+        background-color: $nav_footerColor
+        font-family: 'Times New Roman', Times, serif
+        font-size: 16px
+        &:hover
+            cursor: pointer
+
+footer
+    background-color: $nav_footerColor
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+        color: black
+        margin: 0 1vh
+    a:link
+        text-decoration: none
+    a:visited
+        text-decoration: none

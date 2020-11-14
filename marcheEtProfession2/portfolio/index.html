@@ -1,102 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles\style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <title>Document</title>
 </head>
+
 <body>
     <div class="navBar">
         <ul>
             <li><a href="#">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#aPropos">A propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><button id="myBtn">Contact</button></li>
         </ul>
-        <!-- <div class="socialMedia">
-            <p>Github</p>
-            <p>Linkdin</p>
-            <p>facebook</p>
-        </div> -->
-</div>
-<section id="sectionUn">
-    <div class="description">
-        <img src="img/profil.jpg" alt="photo de moi">
-    <h3>Charles-Etienne Villemure</h3>
-    <h1>Junior Front-end develloper</h1>
-    <p>Presentement etudiant en AEC devellopement WEB au cegep de trois-rivieres. 
-        Mainetenant a 3 session sur 4 dans ma formation de 1250 heures. 
-    Motive a decrocher un stage d'emploie pour continuer mon apprentissage et apporter mes connaissances et valeurs au sein d'une equipe motive</p>
-</div>
-    <img src="img/svg/accueil.svg" alt="Tableau scrum">
-</section>
-<!-- Projets -->
-<section id="sectionDeux">
-    
-    <!-- Code DIY -->
-    <div class="container">
-      <div class="card">
-          <div class="first ">
-            <h4>CodeDIY</h4>
-            <img src="img/projets/codeDIY1902x36.png" alt="Avatar" style="width:100%">
-          </div>
-          <div class="second revealProject">
-            <p>CodeDIY est une PWA listant des librairies Javascript avec un systeme "CRUD" complet faisant apelle 
-                a un "MOCK API".</p>
-                <div class="techUtilise">
-                  <p>React</p>
-                  <p>Sass</p>
-                  <p>Bootstrap 4</p>
-                  <p>Librairies Javascript</p>  
-                </div>
-             <a href="#">Code</a>
-              <a href="#">Site</a>
-          </div>
-      </div>
+
     </div>
 
-    <!-- Formulaire -->
-    <div class="container">
-        <div class="card">
-            <div class="first ">
-              <h4>Formulaire</h4>
-              <img src="img/projets/formulaire1902x36.png" alt="Avatar" style="width:100%">
+    <section id="accueil">
+        <div class="description">
+            <div class="photoNom">
+                <img src="img/profil.jpg" alt="photo de moi">
+                <h3>Charles-Etienne Villemure</h3>
+                <h1>Junior Front-end develloper</h1>
             </div>
-            <div class="second revealProject">
-              <p>CodeDIY est une PWA listant des librairies Javascript avec un systeme "CRUD" complet faisant apelle 
-                  a un "MOCK API".</p>
-                  <p>React <br>Sass <br>Json <br>Bootstrap 4 <br>Librairies Javascript</p>
-                
-                  <a href="#">Code</a>
-                <a href="#">Site</a>
+
+            <p>Présentement étudiant en AEC développement WEB au cégep de trois-rivières. Maintenant à 3 session sur 4
+                dans ma formation de 930 heures. Motivé à décrocher un stage d'emploie pour continuer mon apprentissage
+                et apporter mes connaissances et valeurs au sein d'une équipe motivée.</p>
+        </div>
+        <img src="img/svg/accueil.svg" class="svg" alt="Tableau scrum">
+    </section>
+    <!-- Moi -->
+    <section id="aPropos">
+        <div class="gauche">
+            <p>Conscient des enjeux dans le domaine du web. Je suis quelqu'un de très passionné qui aime accomplir des
+                projets : accessible, facile d'utilisation, unique et sécuritaire. J'aborde chaque nouveaux projets avec
+                beaucoup de détermination et surtout une bonne planification. Ayant ete charpentier-menuisier durant
+                presque 10 ans. Aujourd'hui je recherche un travail plus stable avec ma vie de père de famille tout en
+                ayant la chance de pouvoir amener mes connaissances au sein d'une équipe pour réaliser des projets
+                ambitieux.
+            </p>
+            <hr>
+            <p>
+                Passionné par l'aérospatiale la biologie est l'univer technologiques je suis quelqu'un qui as un plaisir
+                à apprendre et comprendres les choses qui l'entoure. C'est donc pour ça que je recherche un lieu de
+                travail ou il y a les possibilités de toujours pouvoir se mettre à jour et participer à des projets
+                complexe et ambitieux dans une ambiance de travail remplie de personne passionné.
+            </p>
+
+        </div>
+        <div class="droite">
+            <div class="content">
+                <hr>
+                <p>Bientot au terme de ma formation de devellopement Web au cegep de trois-riveres.
+                    Plusieurs technoligies on ete enseigner et appliquer dont :
+                </p>
+                <ul>
+                    <li>React, Angular, Vue.js</li>
+                    <li>La gestion de Projet (Scrum, Methode Agile etc.)</li>
+                    <li>Le Html et Css (svg, animations, bootstrap, Sass et etc.)</li>
+                    <li>Javascript ES6, Jquery</li>
+                    <li>Gestion d'une API avec l'aide de React et Angular</li>
+                    <li>Appliquer la methode CRUD a l'aide de MYSQL et PHP</li>
+                    <li>Et plusieurs autres technologies et notions qui rejoignes le metier de devellopeur WEB.</li>
+                </ul>
             </div>
         </div>
-      </div>
-
-          <!-- Projet Infstastucture -->
-    <div class="container">
-        <div class="card">
-            <div class="first ">
-              <h4>CodeDIY</h4>
-              <img src="img/projets/formulaire1902x36.png" alt="Avatar" style="width:100%">
+    </section>
+    <!-- Projets -->
+    <section id="projets">
+        <div class="lienGithub">
+            <h1> L'integralite des projets et exercices accomplie <br> durant ma formation au cegep ce retrouve ici :
+            </h1>
+            <a href="https://github.com/Charlesetiennev/AEC_Front_End" target="blank"><i
+                    class="fab fa-github fa-5x"></i></a>
+        </div>
+        <div class="container">
+            <!-- Code DIY -->
+            <div class="card">
+                <div class="first ">
+                    <h4>CodeDIY</h4>
+                    <img src="img/projets/codeDIY1902x36.png" alt="Avatar" style="width:100%">
+                </div>
+                <div class="second revealProject">
+                    <p>CodeDIY est une PWA listant des librairies Javascript avec un systeme "CRUD" complet faisant
+                        apelle
+                        a un "MOCK API".</p>
+                    <div class="techUtilise">
+                        <p class="tech-bleu">React</p>
+                        <p class="tech-vert">Sass</p>
+                        <p class="tech-rose">Bootstrap 4</p>
+                        <p class="tech-orange">Librairies Javascript</p>
+                    </div>
+                    <div class="lienProjets">
+                        <a href="https://github.com/Charlesetiennev/AEC_Front_End2/tree/master/programmation2/projetfinalsession2"target="blank">Code</a>
+                    </div>
+                </div>
             </div>
-            <div class="second revealProject">
-              <p>CodeDIY est une PWA listant des librairies Javascript avec un systeme "CRUD" complet faisant apelle 
-                  a un "MOCK API".</p>
-                  <p>React <br>Sass <br>Json <br>Bootstrap 4 <br>Librairies Javascript</p>
-                <a href="#">Code</a>
-                <a href="#">Site</a>
+
+
+            <!-- Formulaire -->
+
+            <div class="card">
+                <div class="first ">
+                    <h4>Formulaire</h4>
+                    <img src="img/projets/formulaire1902x36.png" alt="Avatar" style="width:100%">
+                </div>
+                <div class="second revealProject">
+                    <p>Ceci est un formulaire avec une validation front-end afin de faciliter l'utilisateur</p>
+                    <div class="techUtilise">
+                        <p class="tech-vert">Sass</p>
+                        <p class="tech-rose">Bootstrap 4</p>
+                    </div>
+                    <div class="lienProjets">
+                        <a href="#">Code</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Projet Infstastucture -->
+
+            <!-- <div class="card">
+                <div class="first ">
+                    <h4>CodeDIY</h4>
+                    <img src="img/projets/formulaire1902x36.png" alt="Avatar" style="width:100%">
+                </div>
+                <div class="second revealProject">
+                    <p>CodeDIY est une PWA listant des librairies Javascript avec un systeme "CRUD" complet faisant
+                        apelle
+                        a un "MOCK API".</p>
+                    <div class="techUtilise">
+                        <p class="tech-bleu">React</p>
+                        <p class="tech-vert">Sass</p>
+                        <p class="tech-rose">Bootstrap 4</p>
+                        <p class="tech-orange">Librairies Javascript</p>
+                    </div>
+                    <div class="lienProjets">
+                        <a href="#">Code</a>
+                        <a href="#">Site</a>
+                    </div>
+
+                </div>
+            </div> -->
+        </div>
+
+
+    </section>
+
+    <!--Modal Contact -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>N'hesiter pas en entrer en contact pour des informations ou un commentaire.</p>
+            <div>
+                <div>
+                    <p class="text">Linkdin : </p>
+                    <a href="https://www.linkedin.com/in/charles-etienne-villemure"
+                        target="blank">https://www.linkedin.com/in/charles-etienne-villemure</a>
+                </div>
+                <div>
+                    <p class="text">Github : </p>
+                    <a href="https://github.com/Charlesetiennev" target="blank">https://github.com/Charlesetiennev</a>
+                </div>
+                <div>
+                    <p class="text">facebook : </p>
+                    <a href="https://www.facebook.com/charlesetiennev/"
+                        target="blank">https://www.facebook.com/charlesetiennev/</a>
+                </div>
+                <div>
+                    <p class="text">E-mail : </p>
+                    <a href="mailto:charles-etienne.villemure@hotmail.com">Charles-etienne.villemure@hotmail.com</a>
+                </div>
             </div>
         </div>
-      </div>
+
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <h4>Charles-Etienne Villemure</h4>
+        <a href="https://github.com/Charlesetiennev" target="blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/charles-etienne-villemure" target="blank"><i
+                class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.facebook.com/charlesetiennev/" target="blank"><i
+                class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="mailto:charles-etienne.villemure@hotmail.com"><i class="fas fa-mail-bulk fa-2x"></i></a>
+    </footer>
 
 
 
-</section>
-<!-- Moi -->
-<section id="sectionTrois"></section>
-<!-- Pied de page -->
-<footer><p>Charles-Etienne Villemure</p></footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

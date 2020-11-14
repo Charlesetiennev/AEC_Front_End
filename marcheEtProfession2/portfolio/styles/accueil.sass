@@ -1,0 +1,85 @@
+// Ecran Iphone 5/6/7/8 et X
+$screen-vieuxIphone: 376px
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px
+// Small tablets (portrait view)
+$screen-md-min: 768px
+// Tablets and small desktops
+$screen-lg-min: 992px
+// Large tablets and desktops
+$screen-xl-min: 1200px
+
+@mixin vieuxIphone
+    @media (min-width: #{$screen-vieuxIphone})
+        @content
+// Small devices
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+// Medium devices
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+// Large devices
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+// Extra large devices
+@mixin xl
+    @media (min-width: #{$screen-xl-min})
+        @content
+// Custom devices
+@mixin rwd($screen)
+    @media (min-width: $screen+'px' )
+        @content
+
+@import 'font'
+
+#accueil
+    overflow: hidden
+    display: grid
+    grid-template-columns: 15% 1fr 1fr 15%
+    grid-template-rows: 15% 1fr 1fr
+    height: 100vh
+    @include xl
+        grid-template-rows: 15% 1fr 1fr 1fr
+    .description
+        grid-column: 2/4
+        grid-row: 2/3
+
+        @include xl
+            grid-row: 2/4
+            grid-column: 2/3
+        p
+            font-family: $main-font
+            font-size: 16px
+            @include vieuxIphone
+                font-size: 1.4rem
+        h1
+            font-family: 'Slabo 27px', serif
+        h3
+            font-family: 'Cormorant Garamond', serif
+        img
+            border-radius: 50%
+            width: 15vh
+            height: 15vh
+        .photoNom
+            text-align: center
+            img
+                display: block
+                text-align: center
+                margin: auto
+
+    .svg
+        width: auto
+        height: auto
+        align-self: flex-end
+        grid-row: 3/4
+        grid-column: 3/4
+        display: none
+        @include vieuxIphone
+            display: block
+        @include xl
+            padding-top: 8vh
+            grid-row: 2/4
+            grid-column: 3/4

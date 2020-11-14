@@ -1,0 +1,70 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px
+// Small tablets (portrait view)
+$screen-md-min: 768px
+// Tablets and small desktops
+$screen-lg-min: 1020px
+// Large tablets and desktops
+$screen-xl-min: 1200px
+
+// Small devices
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+// Medium devices
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+// Large devices
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+// Extra large devices
+@mixin xl
+    @media (min-width: #{$screen-xl-min})
+        @content
+// Custom devices
+@mixin rwd($screen)
+    @media (min-width: $screen+'px' )
+        @content
+
+@import 'font'
+
+#aPropos
+    background-color: #aeb8a3
+    padding: 5vh
+    display: block
+    @include xl
+        display: flex
+        justify-content: center
+        align-items: center
+    p
+        font-family: $main-font
+        color: #373737
+    li
+        font-family: $second-font
+        color: #373737
+    .gauche
+        width: 75%
+        padding: 0
+        @include xl
+            padding: 0 15vh
+        // width: 10%
+        // @include xl
+
+        p
+            font-size: 16px
+            @include md
+                font-size: 1.6rem
+    .droite
+
+        font-weight: bold
+        padding: 0
+        @include lg
+            padding: 0 15vh
+        p
+            font-size: 16px
+            @include md
+                font-size: 1.6rem
+hr
+    border: 1px solid black

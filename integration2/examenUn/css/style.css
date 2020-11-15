@@ -1,0 +1,21 @@
+/*styles.css*/
+/*Par Charles-Etienne Villemure*/
+/*Le 22 Mai 2020*/
+body{
+    background-color: black;
+}
+hr {
+    border-top: 1px solid white;
+}
+label.title{
+    font-size: 1.5em;
+}
+span{
+    color: red;
+}
+form{
+    background-color: #1D1D1F;
+}
+.droite{
+    margin-top: 11%;
+}

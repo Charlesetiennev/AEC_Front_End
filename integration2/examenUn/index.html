@@ -1,0 +1,180 @@
+<!--Index.HTML-->
+<!--Par Charles-Etienne Villemure-->
+<!--Le 4/25/2020-->
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <title>Examen 1 Integration 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-7 py-4">
+            <form name="inscription" class="text-white" onsubmit="return validerFormulaire()">
+                <div class="pl-3">
+                    <h3>Participez à l'avenir de la race humaine.</h3>
+                    <p>Inscrivez-vous à la prochaine mission de colonisation sur Mars !</p>
+                    <hr class="text-white mr-3 pb-3">
+                </div>
+                <div class="container-fluid">
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label>Identification <span>*</span></label>
+                        </div>
+                        <!---->
+                        <div class="form-group col-3">
+                            <input type="text" class="form-control" id="nom" pattern="[a-zA-Z àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ-]{2,25}" required  autofocus>
+                            <label for="nom">Nom</label>
+                        </div>
+                        <div class="form-group col-3">
+                            <input type="text" class="form-control" id="prenom" pattern="[a-zA-Z àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ-]{2,25}" required>
+                            <label for="prenom">Prénom</label>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label for="dateDeNaissance">Date de naissance <span>*</span></label>
+
+                        </div>
+                        <div class="form-group col-8">
+                            <input type="date" class="form-control" id="dateDeNaissance" min="1920-01-01" max="2021-01-01" required>
+                        </div>
+                    </div>
+                    <!--                    -->
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label>Numéro de <br>téléphone <span>*</span></label>
+                        </div>
+                        <div class="form-group col-2">
+                            <input type="text" class="form-control" id="codeRegional" name="codeRegional" required>
+                            <label for="codeRegional">Code régional </label>
+                        </div>
+                        <h1>-</h1>
+                        <div class="form-group col-3">
+                            <input type="tel" class="form-control" id="numeroDeTelephone" pattern="[0-9]{3}-[0-9]{4}" required>
+                            <label for="numeroDeTelephone">Numéro de téléphone</label>
+                        </div>
+                    </div>
+                    <!---->
+
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label>E-mail <span>*</span></label>
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="email" class="form-control" id="email" placeholder="ex: myname@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            <label for="email">exemple@exemple.com</label>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label>Adresse <span>*</span></label>
+                        </div>
+                        <div class="form-group col-7">
+                            <input type="number" class="form-control" id="numeroDePorte" min="1"  pattern="[0-9]{1,8}" required>
+                            <label for="numeroDePorte">Numéro de porte</label>
+                            <input type="number" class="form-control" id="numeroDappartement" min="1"  pattern="[0-9]{1,8}" required>
+                            <label for="numeroDappartement">Numéro d'appartement</label>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <input type="text" class="form-control" id="ville" pattern="[a-zA-Z àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ-]{3,30}" required>
+                                    <label for="ville">Ville</label>
+                                </div>
+                                <div class="form-group col-6">
+                                    <input type="text" class="form-control" id="etatProvince" pattern="[a-zA-Z àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ-]{2,30}" required>
+                                    <label for="etatProvince">État/province</label>
+                                </div>
+                                <div class="form-group col-6">
+                                    <input type="text" class="form-control" id="codePostal" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}" required>
+                                    <label for="codePostal">Code postal</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label for="sexe">Sexe <span>*</span></label>
+                        </div>
+                        <div class="form-group col-5">
+                            <select id="sexe" class="form-control" required>
+                                <option disabled selected value></option>
+                                <option>Homme</option>
+                                <option>Femme</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label for="metier">Métier <span>*</span></label>
+                        </div>
+                        <div class="form-group col-5">
+                            <input type="text" class="form-control" id="metier"  pattern="[A-Za-z]{1,25}" required>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-row">
+                        <div class="form-group col-3">
+                            <label for="presantation">Présantation</label>
+                        </div>
+                        <div class="form-group col-8">
+                            <textarea type="text" class="form-control" rows="5" id="presantation" minlength="10" maxlength="500" ></textarea>
+                        </div>
+                    </div>
+                    <!---->
+                    <button type="submit" class="offset-3 btn btn-light text-secondary my-4 pl-3">Soumettre ma candidature</button>
+                </div>
+
+            </form>
+        </div>
+        <div class=" col-4 droite">
+            <div class="row">
+                <div class="col-12 p-0 d-flex align-items-center justify-content-center">
+                    <canvas id="myCanvas" width="400" height="400"/>
+                </div>
+                <div class="col-12 p-0  d-flex align-items-center justify-content-center">
+                            <svg height="400" width="400">
+                                <polygon points="200,10
+                                 270,160
+                                 125,160"
+                                         fill="white"
+                                         stroke="black"
+                                         stroke-linejoin="round"/>
+                                <rect x="159" y="118" width="80" height="180"
+                                      fill="white"/>
+                                <text x="200" y="350"
+                                      fill="white" font-size="3em"
+                                      text-anchor="middle" font-family="Lucida Console, Monaco, monospace">
+                                    Destination</text>
+                            </svg>
+                </div>
+                <div id="paypal-button-container" class="offset-2 col-8 bg-white pt-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!---->
+<script src="js/formulaireValidation.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
+<script src="js/paypal.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -279,7 +279,15 @@ hr {
 .modal-content .text {
   display: inline;
   color: #ABC28D;
-  text-decoration: unde;
+  text-decoration: underline;
+}
+.modal-content br {
+  display: inline;
+}
+@media (min-width: 1020px) {
+  .modal-content br {
+    display: none;
+  }
 }
 
 .close {

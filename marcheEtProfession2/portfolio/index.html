@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <title>Charles=Étienne Villemure</title>
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Charles-Étienne Villemure</title>
     <link rel="icon" type="image/png" href="/img/ico.png" />
 </head>
 
@@ -32,12 +36,12 @@
             </div>
             <p>Étudiant en AEC développement WEB au cégep de Trois-Rivières.Maintenant à 3 sessions sur 4 de complétées
                 dans ma formation de 930 heures.Motivé à décrocher un stage d'emploi pour continuer mon apprentissage et
-                apporter mes connaissances & valeurs au sein d'une équipe dynamique. .</p>
+                apporter mes connaissances & valeurs au sein d'une équipe dynamique.</p>
         </div>
         <img src="img/svg/accueil.svg" class="svg" alt="Tableau scrum">
     </section>
     <!-- Moi -->
-    <section id="aPropos">
+    <section id="aPropos" data-aos="fade-up">
         <div class="gauche">
             <p>Conscient des enjeux dans le domaine du WEB, je suis quelqu'un de très passionné qui aime accomplir des
                 projets: accessibles, facile d'utilisation, unique et sécuritaire.J'aborde chaque nouveaux projets avec
@@ -73,7 +77,7 @@
     </section>
     <!-- Projets -->
     <section id="projets">
-        <div class="lienGithub">
+        <div class="lienGithub" data-aos="fade-down" data-aos-duration="1200">
             <h1> L'intégralité des projets et exercices accomplie <br> durant ma formation au cégep se retrouve ici :
             </h1>
             <a href="https://github.com/Charlesetiennev/AEC_Front_End" target="blank"><i
@@ -81,7 +85,7 @@
         </div>
         <div class="container">
             <!-- Code DIY -->
-            <div class="card">
+            <div class="card" data-aos="zoom-in-right">
                 <div class="first ">
                     <h4>CodeDIY</h4>
                     <img src="img/projets/codeDIY1902x36.png" alt="Avatar" style="width:100%">
@@ -101,7 +105,7 @@
                 </div>
             </div>
             <!-- Formulaire -->
-            <div class="card">
+            <div class="card" data-aos="zoom-in-left" data-aos-duration="1200">
                 <div class="first ">
                     <h4>Formulaire</h4>
                     <img src="img/projets/formulaire1902x36.png" alt="Avatar" style="width:100%">
@@ -162,6 +166,12 @@
         <a href="mailto:charles-etienne.villemure@hotmail.com"><i class="fas fa-mail-bulk fa-2x"></i></a>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 
 </html>

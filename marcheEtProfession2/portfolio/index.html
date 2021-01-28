@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <!-- Gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Charles-Étienne Villemure</title>
@@ -19,15 +17,16 @@
 
 <body>
     <div class="navBar">
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#aPropos">À propos</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><button id="myBtn">Contact</button></li>
-            <li><a href="./cv/CV.pdf" download="">C.v</a></li>
+        <ul id="nav">
+            <li><a class="navLink active" href="#">Accueil</a></li>
+            <li><a class="navLink" href="#aPropos">À propos</a></li>
+            <li><a class="navLink" href="#projets">Projets</a></li>
+            <li><button class="navLink" id="myBtn">Contact</button></li>
+            <li><a class="navLink" href="./cv/CV.pdf" download="">C.v</a></li>
         </ul>
+        <span class="target"></span>
     </div>
-    <section id="accueil">
+    <section id="accueil" class="section">
         <div class="description">
             <div class="photoNom">
                 <img src="img/profil.jpg" alt="photo de moi">
@@ -41,7 +40,8 @@
         <img src="img/svg/accueil.svg" class="svg" alt="Tableau scrum">
     </section>
     <!-- Moi -->
-    <section id="aPropos" data-aos="fade-up">
+    <section id="aPropos" class="section" style="background-image: url('../img/background/bg-projets.jpg');">
+        <div class="overlay-aPropos"></div>
         <div class="gauche">
             <p>Conscient des enjeux dans le domaine du WEB, je suis quelqu'un de très passionné qui aime accomplir des
                 projets: accessibles, facile d'utilisation, unique et sécuritaire.J'aborde chaque nouveaux projets avec
@@ -76,7 +76,7 @@
         </div>
     </section>
     <!-- Projets -->
-    <section id="projets">
+    <section id="projets" class="section">
         <div class="lienGithub" data-aos="fade-down" data-aos-duration="1200">
             <h1> L'intégralité des projets et exercices accomplie <br> durant ma formation au cégep se retrouve ici :
             </h1>

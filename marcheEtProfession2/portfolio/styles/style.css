@@ -16,12 +16,41 @@
   display: inline;
 }
 .navBar li a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   color: #272838;
-  padding: 2vh;
+  padding: 1vh 2vh;
+}
+.navBar li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.navBar li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.navBar li .active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: visible;
 }
 .navBar button {
   border: none;
+  outline: none;
   background-color: #D9DCD6;
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
@@ -119,6 +148,10 @@ footer a:visited {
   }
 }
 
+#projets {
+  background-color: #ABC28D;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -195,6 +228,10 @@ footer a:visited {
 
 #aPropos {
   background-color: #aeb8a3;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5vh;
   display: block;
 }
@@ -207,11 +244,11 @@ footer a:visited {
 }
 #aPropos p {
   font-family: "Cormorant Garamond", serif;
-  color: #373737;
+  color: #D9DCD6;
 }
 #aPropos li {
   font-family: "Slabo", serif;
-  color: #373737;
+  color: #D9DCD6;
 }
 #aPropos .gauche {
   width: 75%;
@@ -249,7 +286,7 @@ footer a:visited {
 }
 
 hr {
-  border: 1px solid black;
+  border: 1px solid #D9DCD6;
 }
 
 .modal {

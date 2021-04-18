@@ -29,39 +29,45 @@ $screen-xl-min: 1200px
         @content
 
 @import 'font'
-
+.texteContent
+    background-color: #2D2A32
+    padding: 8vh
+.waveTop
+    transform: translate(0, 2vh)
 #aPropos
-    background-color: #aeb8a3
-    background-attachment: fixed
-    background-position: right bottom
-    background-repeat: no-repeat
-    background-size: cover
-    padding: 5vh
+    max-width: 100%
+    overflow-x: hidden
+    margin: 0
+    padding: 0
     display: block
-    @include xl
-        display: flex
-        justify-content: center
-        align-items: center
+    // @include xl
+    //     display: flex
+    //     justify-content: center
+    //     align-items: center
     p
-        font-family: $main-font
-        color: #D9DCD6
-    li
-        font-family: $second-font
-        color: #D9DCD6
+        // font-family: $main-font
+        color: #F4D06F
+    ul
+        list-style: none
+        li
+            font-family: $second-font
+            color: #EF8275
+            &::before
+                content: '•   ' 
+                padding-right: .5rem
+                display: inline-block
+                color: #F4D06F
+                
     .gauche
         width: 75%
         padding: 0
         @include xl
             padding: 0 15vh
-        // width: 10%
-        // @include xl
-
         p
             font-size: 16px
             @include md
                 font-size: 1.6rem
     .droite
-
         font-weight: bold
         padding: 0
         @include lg
@@ -71,4 +77,6 @@ $screen-xl-min: 1200px
             @include md
                 font-size: 1.6rem
 hr
-    border: 1px solid #D9DCD6
+    border: 1px solid #EF8275
+
+    // https: //charlesetiennev.github.io/AEC_Front_End2/integration1/projetFinal/index.html

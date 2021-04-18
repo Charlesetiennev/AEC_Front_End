@@ -36,51 +36,65 @@ $screen-xl-min: 1200px
 @import 'font'
 
 #accueil
+    width: 100%
     overflow: hidden
-    display: grid
-    grid-template-columns: 15% 1fr 1fr 15%
-    grid-template-rows: 15% 1fr 1fr
-    height: 100vh
-    @include xl
-        grid-template-rows: 15% 1fr 1fr 1fr
-    .description
-        z-index: -10
-        grid-column: 2/4
-        grid-row: 2/3
-
-        @include xl
-            grid-row: 2/4
-            grid-column: 2/3
+    height: 90vh
+    display: flex
+    align-items: center
+    .card
+        padding: 0.5vh
+        
+        margin: 0 auto
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        display: block
+        box-shadow:  rgb(255, 255, 255) 8px -8px 0px -3px, #2d2a32 8px -8px, -19px 17px 0px 0px 
+        @include lg
+            width: 70%
+        .content
+            display: flex
+            align-items: center
+            flex-direction: column
+            @include lg
+                flex-direction: row
+            .textTrans
+                padding: 3vh
+                background-color: rgba(255,255 ,255 ,0.7 )
+                color: black
+                mix-blend-mode: screen
+                line-height: 200%
+                @include lg
+                    margin: 1vh
+                    margin-right: 3vh
+                    padding-bottom: 8vh
+                    width: 45%
         p
             font-family: $main-font
-            font-size: 16px
-            @include vieuxIphone
-                font-size: 1.4rem
-        h1
-            font-family: 'Slabo 27px', serif
-        h3
-            font-family: 'Cormorant Garamond', serif
-        img
-            border-radius: 50%
-            width: 15vh
-            height: 15vh
-        .photoNom
-            text-align: center
-            img
-                display: block
-                text-align: center
-                margin: auto
+            margin-top: auto
+            margin-bottom: 2vh
+            font-size: 1.1rem
+            width: 55%
+            color: white
 
-    .svg
-        width: auto
-        height: auto
-        align-self: flex-end
-        grid-row: 3/4
-        grid-column: 3/4
-        display: none
-        @include vieuxIphone
-            display: block
-        @include xl
-            padding-top: 8vh
-            grid-row: 2/4
-            grid-column: 3/4
+
+    
+    
+            // h1
+        //     font-family: 'Slabo 27px', serif
+        // h3
+        //     font-family: 'Cormorant Garamond', serif
+#photoDeMoi
+    position: relative
+    z-index: 1
+    height: 20vh
+    width: 20vh
+    border-radius: 50%
+    margin: 0 40% 0 60%
+    transform: translateY(8vh)
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+
+.nom
+    margin: 0.6rem
+    padding: 2rem

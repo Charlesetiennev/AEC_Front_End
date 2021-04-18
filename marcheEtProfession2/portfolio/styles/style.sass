@@ -9,6 +9,32 @@ html
     scroll-behavior: smooth
 body
     margin: 0
+    height: 100vh
+    overflow-x: hidden
 a
     text-decoration: none
     color: #000
+.cursor
+    width: 5rem
+    height: 5rem
+    background-color: darkgrey
+    position: absolute
+    z-index: 10
+    transform: translate(-50%,-50%)
+    pointer-events: none
+    visibility: hidden
+    animation: rotateCustomCursor 6s infinite
+    mix-blend-mode: difference
+
+@keyframes rotateCustomCursor
+    0%
+        transform: rotate(0deg)
+        border-radius: 40% 55% 50% 61%
+    50%
+        transform: rotate(180deg) scaleX(1.1) scaleY(.8)
+        border-radius: 55% 43% 60% 50%
+    100%
+        transform: rotate(360deg)
+        border-radius: 40% 55% 50% 61%
+section
+    scroll-margin-top: 3rem

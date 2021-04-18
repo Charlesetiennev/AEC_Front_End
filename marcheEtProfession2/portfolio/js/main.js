@@ -29,9 +29,23 @@ window.onscroll = (() => {
 
   mainSection.forEach((v, i) => {
     let rect = v.getBoundingClientRect().y
-    if (rect < window.innerHeight - 200) {
+    if (rect < window.innerHeight - 600) {
       menuSection.forEach(v => v.classList.remove('active'))
       menuSection[i].classList.add('active')
     }
   })
 })
+
+const cursor = document.querySelector('.cursor');
+const sectionAPropos = document.getElementById('aPropos')
+function showCursor() {
+  document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + e.pageY + "px; left:" + e.pageX + "px; visibility: visible;");
+    sectionAPropos.setAttribute("style", "cursor: none;");
+  })
+}
+function hideCursor() {
+  document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + e.pageY + "px; left:" + e.pageX + "px; visibility:hidden ;");
+  })
+}

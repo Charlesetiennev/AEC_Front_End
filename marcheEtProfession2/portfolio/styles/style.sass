@@ -15,16 +15,19 @@ a
     text-decoration: none
     color: #000
 .cursor
-    width: 5rem
-    height: 5rem
-    background-color: darkgrey
-    position: absolute
-    z-index: 10
-    transform: translate(-50%,-50%)
-    pointer-events: none
-    visibility: hidden
-    animation: rotateCustomCursor 6s infinite
-    mix-blend-mode: difference
+    display: none
+    @include lg
+        display: block
+        width: 5rem
+        height: 5rem
+        background-color: darkgrey
+        position: absolute
+        z-index: 10
+        transform: translate(-50%,-50%)
+        pointer-events: none
+        visibility: hidden
+        animation: rotateCustomCursor 6s infinite
+        mix-blend-mode: difference
 
 @keyframes rotateCustomCursor
     0%

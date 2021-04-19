@@ -1,82 +1,45 @@
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px
-// Small tablets (portrait view)
-$screen-md-min: 768px
-// Tablets and small desktops
-$screen-lg-min: 1020px
-// Large tablets and desktops
-$screen-xl-min: 1200px
-
-// Small devices
-@mixin sm
-    @media (min-width: #{$screen-sm-min})
-        @content
-// Medium devices
-@mixin md
-    @media (min-width: #{$screen-md-min})
-        @content
-// Large devices
-@mixin lg
-    @media (min-width: #{$screen-lg-min})
-        @content
-// Extra large devices
-@mixin xl
-    @media (min-width: #{$screen-xl-min})
-        @content
-// Custom devices
-@mixin rwd($screen)
-    @media (min-width: $screen+'px' )
-        @content
-
-@import 'font'
-.texteContent
-    background-color: #2D2A32
-    padding: 8vh
-.waveTop
-    transform: translate(0, 2vh)
 #aPropos
     max-width: 100%
-    overflow-x: hidden
-    margin: 0
-    padding: 0
-    display: block
-    // @include xl
-    //     display: flex
-    //     justify-content: center
-    //     align-items: center
-    p
-        // font-family: $main-font
-        color: #F4D06F
-    ul
-        list-style: none
-        li
+    overflow: hidden    
+    .waveTop
+        transform: translate(0, 2vh)
+    .presentation
+        background-color: #2D2A32
+        padding: 8vh
+        hr
+            border: 1px solid #E57A44
+        .premierParagraphe, .deuxiemeParagraphe
+            width: 100%
+            font-size: 1.4rem
+            @include lg
+                width: 75%
+                font-size: 2rem
+        .premierParagraphe
+            color: #A3C3D9
+            font-family: $main-font
+        .deuxiemeParagraphe
             font-family: $second-font
-            color: #EF8275
-            &::before
-                content: '•   ' 
-                padding-right: .5rem
-                display: inline-block
-                color: #F4D06F
-                
-    .gauche
-        width: 75%
-        padding: 0
-        @include xl
-            padding: 0 15vh
-        p
-            font-size: 16px
-            @include md
-                font-size: 1.6rem
-    .droite
-        font-weight: bold
-        padding: 0
-        @include lg
-            padding: 0 15vh
-        p
-            font-size: 16px
-            @include md
-                font-size: 1.6rem
-hr
-    border: 1px solid #EF8275
+            margin: 2vh 0 2vh auto
+            @include lg
+                margin: 4vh 0 4vh auto
+        .formation
+            p
+                font-size: 1.7rem
+                font-family: $main-font
+                color: #A3C3D9
+            ul
+                @include lg
+                    padding-left: 10vh
+                li
+                    font-family: $second-font
+                    color:#E57A44 
+                    font-weight: bold
+                    span
+                        font-weight: bold
+                        font-size: 1.2rem
+                        color:#7180AC
+                        @include lg
+                            font-size: 1.5rem
+
 
     // https: //charlesetiennev.github.io/AEC_Front_End2/integration1/projetFinal/index.html

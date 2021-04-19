@@ -1,56 +1,79 @@
-$couleursProjets: ('bleu': #223dda,'rose': #eb72d0,'vert': #20d15b,'orange': #e0a72a)
-
 #projets
     position: relative
     background-color: #EEE1B3
-    // #ABC28D
-
-.container
-    display: flex
-    justify-content: space-around
-
-.card
-    margin: 5vh
-    &:hover
-        .second
-            transform: translateY(0)
-            opacity: 1
-            margin-top: -3px
-
-    .second
-        transform: translateY(-70px)
-        opacity: 0
-        background-color: #D9DCD6
-        p
-            margin: 0
-    .revealProject
-        transition: 1s
-        p
-            padding: .3rem
+    overflow: hidden
+    .lienGithub
+        padding: 7vh 15% 0 15%
+        h1
             text-align: center
-        .techUtilise
-            @each $couleur, $i in $couleursProjets
-                .tech-#{$couleur}
-                    background-color: $i
-                    border: solid 1px black
-                    margin: .3rem
-    .lienProjets
-        display: flex
-        justify-content: space-around
         a
-            padding: .4rem
-            text-decoration: underline
-    h4
-        background-color: #aeb8a3
-        padding: 3px
-        margin: 0
-        margin-top: -3px
-        text-align: center
-.lienGithub
-    h1
-        text-align: center
-        margin: 0
-        padding: 8vh 0 0 0
-    a
+            padding: 1vh
+            color: #E57A44 
+    .container
+        display: block
+        @include lg
+            display: flex
+            justify-content: space-around
+.cardProjet
+    overflow: hidden
+    margin: 3vh
+    .overlay
+        transform: translateY(-100%)
+        position: absolute
+        transition: .5s
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0 ,0 ,0.5 )
+        opacity: 0
+    .contenueCard
+        position: absolute
         display: flex
-        justify-content: space-around
+        flex-direction: column
+        justify-content: space-between
+        text-align: center
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 100
+        opacity: 0
+        transition: 2s
+        h1
+            transform: translateX(-100%)
+            color: white
+            font-size: 2rem
+            transition: 2s
+        .liensProjets
+            transform: translateX(100%)
+            transition: 1.3s
+            display: flex
+            justify-content: center
+            a
+                color: white
+                font-size: 1.5rem
+                padding: 1vh 2vh
+                span
+                    display: block
+        p
+            color: white
+            margin-bottom: 4vh 
+            transform: translateY(300%)
+            transition: 3s
+            font-size: 1.3rem
+            @include xl
+                margin:0 25% 4vh 25%
+    &:hover
+        .contenueCard
+            opacity: 1
+        h1
+            transform: translateX(0%)
+        .liensProjets
+            transform: translateX(0%)
+        p
+            transform: translateY(0%)
+        .overlay
+            opacity: 1
+            transform: translateY(0%)
+            

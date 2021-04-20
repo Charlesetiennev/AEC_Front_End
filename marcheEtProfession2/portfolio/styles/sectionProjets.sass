@@ -2,6 +2,7 @@
     position: relative
     background-color: #EEE1B3
     overflow: hidden
+    transform: translateY(-3vh)
     .lienGithub
         padding: 7vh 15% 0 15%
         h1
@@ -14,12 +15,15 @@
         @include lg
             display: flex
             justify-content: space-around
+        .appVoyages
+            @include lg
+                width: 50%           
 .cardProjet
+    position: relative
     overflow: hidden
     margin: 3vh
-    .appVoyages
-        @include lg
-            width: 50%
+    img
+        width: 100%
     .overlay
         position: absolute
         transition: .5s
@@ -86,5 +90,5 @@
         .overlay
             opacity: 1
             transform: translateY(0%)
-           
+
     //  https://charlesetiennev.github.io/AEC_Front_End2/marcheEtProfession2/portfolio/index.html

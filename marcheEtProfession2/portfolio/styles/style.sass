@@ -1,11 +1,10 @@
-
 // sass styles/style.sass styles/style.css
-
-@import 'navbar_footer'
+@import './mixinResponsive'
 @import 'accueil'
 @import 'sectionProjets'
 @import 'sectionApropos'
 @import 'contactModal'
+@import 'navbar_footer'
 html
     scroll-behavior: smooth
 body
@@ -42,15 +41,4 @@ a
         border-radius: 40% 55% 50% 61%
 section
     scroll-margin-top: 3rem
-
-// Ecran Iphone 5/6/7/8 et X
-$screen-vieuxIphone: 376px
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px
-// Small tablets (portrait view)
-$screen-md-min: 768px
-// Tablets and small desktops
-$screen-lg-min: 992px
-// Large tablets and desktops
-$screen-xl-min: 1200px
 

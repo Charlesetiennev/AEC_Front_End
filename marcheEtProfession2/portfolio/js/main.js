@@ -3,6 +3,8 @@ const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
+  
+  modal.style.transform = "translateY(0)"
   modal.style.display = "block";
 }
 span.onclick = function () {
@@ -36,7 +38,7 @@ window.onscroll = (() => {
     }
   })
 })
-// Hide and Show Navbar
+// Affichage au scroll haut sur petit ecran
 let screenSize = window.innerWidth || document.documentElement.clientWidth;
 if(screenSize < 980){
   var lastScrollTop = 0;

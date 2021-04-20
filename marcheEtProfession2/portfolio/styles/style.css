@@ -1,92 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,300&family=Slabo+27px&display=swap");
-#navBar {
-  position: fixed;
-  transition: 0.4s;
-  z-index: 300;
-  top: 0;
-  width: 100%;
-}
-#navBar ul {
-  list-style-type: none;
-  overflow: hidden;
-  padding: 2vh;
-  margin: 0;
-  background-color: white;
-  border-bottom: solid 3px #E57A44;
-}
-#navBar ul div {
-  display: block;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  #navBar ul div {
-    display: inline;
-  }
-}
-#navBar ul div li {
-  display: inline;
-}
-#navBar ul div li a {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: #272838;
-  padding: 1vh 2vh;
-}
-#navBar ul div li a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-}
-#navBar ul div li a:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-#navBar ul .active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  visibility: visible;
-}
-#navBar button {
-  border: none;
-  outline: none;
-  background-color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
-}
-#navBar button:hover {
-  cursor: pointer;
-}
-
-footer {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer a {
-  color: black;
-  margin: 0 1vh;
-}
-footer a:link {
-  text-decoration: none;
-}
-footer a:visited {
-  text-decoration: none;
-}
-
 #accueil {
   width: 100%;
   overflow: hidden;
@@ -112,6 +24,7 @@ footer a:visited {
   }
 }
 #accueil .card .content {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -181,6 +94,7 @@ footer a:visited {
   position: relative;
   background-color: #EEE1B3;
   overflow: hidden;
+  transform: translateY(-3vh);
 }
 #projets .lienGithub {
   padding: 7vh 15% 0 15%;
@@ -201,15 +115,19 @@ footer a:visited {
     justify-content: space-around;
   }
 }
+@media (min-width: 992px) {
+  #projets .container .appVoyages {
+    width: 50%;
+  }
+}
 
 .cardProjet {
+  position: relative;
   overflow: hidden;
   margin: 3vh;
 }
-@media (min-width: 992px) {
-  .cardProjet .appVoyages {
-    width: 50%;
-  }
+.cardProjet img {
+  width: 100%;
 }
 .cardProjet .overlay {
   position: absolute;
@@ -313,6 +231,8 @@ footer a:visited {
 #aPropos .waveBot {
   width: 102%;
   transform: translate(-2vh, -10px);
+  background-color: #EEE1B3;
+  z-index: -10;
 }
 #aPropos .presentation {
   position: relative;
@@ -338,6 +258,7 @@ footer a:visited {
   font-family: "Cormorant Garamond", serif;
 }
 #aPropos .presentation .deuxiemeParagraphe {
+  color: #EEE1B3;
   font-family: "Slabo", serif;
   margin: 2vh 0 2vh auto;
 }
@@ -375,12 +296,13 @@ footer a:visited {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   left: 0;
   top: 0;
+  transition: 2s;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -423,6 +345,94 @@ footer a:visited {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+#navBar {
+  position: fixed;
+  transition: 0.4s;
+  z-index: 4;
+  top: 0;
+  width: 100%;
+}
+#navBar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 2vh;
+  margin: 0;
+  background-color: white;
+  border-bottom: solid 3px #E57A44;
+}
+#navBar ul .liensNav {
+  display: block;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #navBar ul .liensNav {
+    display: inline;
+  }
+}
+#navBar ul .liensNav li {
+  display: inline;
+}
+#navBar ul .liensNav li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #272838;
+  padding: 1vh 2vh;
+}
+#navBar ul .liensNav li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+#navBar ul .liensNav li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+#navBar ul .active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: visible;
+}
+#navBar button {
+  border: none;
+  outline: none;
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+#navBar button:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  color: black;
+  margin: 0 1vh;
+}
+footer a:link {
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
 }
 
 html {

@@ -311,12 +311,14 @@ footer a:visited {
   transform: translate(0, 2vh);
 }
 #aPropos .waveBot {
-  overflow-y: hidden;
-  transform: scaleX(1.5);
+  width: 102%;
+  transform: translate(-2vh, -10px);
 }
 #aPropos .presentation {
+  position: relative;
   background-color: #2D2A32;
   padding: 8vh;
+  z-index: 1;
 }
 #aPropos .presentation hr {
   border: 1px solid #E57A44;

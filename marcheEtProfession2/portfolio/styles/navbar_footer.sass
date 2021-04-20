@@ -1,9 +1,44 @@
+// Ecran Iphone 5/6/7/8 et X
+$screen-vieuxIphone: 376px
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px
+// Small tablets (portrait view)
+$screen-md-min: 768px
+// Tablets and small desktops
+$screen-lg-min: 992px
+// Large tablets and desktops
+$screen-xl-min: 1200px
+
+@mixin vieuxIphone
+    @media (min-width: #{$screen-vieuxIphone})
+        @content
+// Small devices
+@mixin sm
+    @media (min-width: #{$screen-sm-min})
+        @content
+// Medium devices
+@mixin md
+    @media (min-width: #{$screen-md-min})
+        @content
+// Large devices
+@mixin lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+// Extra large devices
+@mixin xl
+    @media (min-width: #{$screen-xl-min})
+        @content
+// Custom devices
+@mixin rwd($screen)
+    @media (min-width: $screen+'px' )
+        @content
 
 $nav_footerColor: white
 
-.navBar
+#navBar
     position: fixed
-    z-index: 3
+    transition: .4s
+    z-index: 300
     top: 0
     width: 100%
     ul
@@ -13,6 +48,11 @@ $nav_footerColor: white
         margin: 0
         background-color: $nav_footerColor
         border-bottom: solid 3px #E57A44
+        div
+            display: block
+            text-align: center
+            @include md
+                display: inline
     li
         display: inline
         a

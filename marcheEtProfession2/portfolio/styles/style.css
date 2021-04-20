@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,300&family=Slabo+27px&display=swap");
-.navBar {
+#navBar {
   position: fixed;
-  z-index: 3;
+  transition: 0.4s;
+  z-index: 300;
   top: 0;
   width: 100%;
 }
-.navBar ul {
+#navBar ul {
   list-style-type: none;
   overflow: hidden;
   padding: 2vh;
@@ -13,17 +14,26 @@
   background-color: white;
   border-bottom: solid 3px #E57A44;
 }
-.navBar li {
+#navBar ul div {
+  display: block;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #navBar ul div {
+    display: inline;
+  }
+}
+#navBar li {
   display: inline;
 }
-.navBar li a {
+#navBar li a {
   position: relative;
   display: inline-block;
   text-decoration: none;
   color: #272838;
   padding: 1vh 2vh;
 }
-.navBar li a::before {
+#navBar li a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -35,11 +45,11 @@
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-.navBar li a:hover::before {
+#navBar li a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
-.navBar li .active::after {
+#navBar li .active::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -49,14 +59,14 @@
   background-color: #000;
   visibility: visible;
 }
-.navBar button {
+#navBar button {
   border: none;
   outline: none;
   background-color: white;
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
 }
-.navBar button:hover {
+#navBar button:hover {
   cursor: pointer;
 }
 
@@ -196,8 +206,12 @@ footer a:visited {
   overflow: hidden;
   margin: 3vh;
 }
+@media (min-width: 992px) {
+  .cardProjet .appVoyages {
+    width: 50%;
+  }
+}
 .cardProjet .overlay {
-  transform: translateY(-100%);
   position: absolute;
   transition: 0.5s;
   top: 0;
@@ -205,7 +219,13 @@ footer a:visited {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
+  opacity: 1;
+}
+@media (min-width: 992px) {
+  .cardProjet .overlay {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 .cardProjet .contenueCard {
   position: absolute;
@@ -218,20 +238,33 @@ footer a:visited {
   height: 100%;
   width: 100%;
   z-index: 100;
-  opacity: 0;
   transition: 2s;
+  opacity: 1;
+}
+@media (min-width: 992px) {
+  .cardProjet .contenueCard {
+    opacity: 0;
+  }
 }
 .cardProjet .contenueCard h1 {
-  transform: translateX(-100%);
   color: white;
   font-size: 2rem;
   transition: 2s;
 }
+@media (min-width: 992px) {
+  .cardProjet .contenueCard h1 {
+    transform: translateX(-100%);
+  }
+}
 .cardProjet .contenueCard .liensProjets {
-  transform: translateX(100%);
   transition: 1.3s;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 992px) {
+  .cardProjet .contenueCard .liensProjets {
+    transform: translateX(100%);
+  }
 }
 .cardProjet .contenueCard .liensProjets a {
   color: white;

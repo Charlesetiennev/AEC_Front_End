@@ -1,3 +1,4 @@
+// Modal
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");
 const span = document.getElementsByClassName("close")[0];
@@ -12,7 +13,7 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-
+// Section actif sur menu
 let menuSection = document.querySelectorAll('#nav li a');
 // Click
 menuSection.forEach(v => {
@@ -35,7 +36,45 @@ window.onscroll = (() => {
     }
   })
 })
+// Hide and Show Navbar
+let screenSize = window.innerWidth || document.documentElement.clientWidth;
+if(screenSize < 980){
+  var lastScrollTop = 0;
+  navigation = document.getElementById("navBar");
+  window.addEventListener("scroll",function(){
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollTop > lastScrollTop){
+      navigation.style.transform = "translateY(-100%)";
+    }
+    else{
+      navigation.style.transform = "translateY(0%)";
+    }
+    lastScrollTop = scrollTop
+  })
 
+}
+window.addEventListener('resize',function(){
+  screenSize = window.innerWidth || document.documentElement.clientWidth;
+    if(screenSize<980){
+      var lastScrollTop = 0;
+  navigation = document.getElementById("navBar");
+  window.addEventListener("scroll",function(){
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrollTop > lastScrollTop){
+      navigation.style.transform = "translateY(-100%)";
+    }
+    else{
+      navigation.style.transform = "translateY(0%)";
+    }
+    lastScrollTop = scrollTop
+  }) 
+    }
+    else{
+      navigation.style.transform= "translateY(0%)"
+    }
+},false)
+
+// Cureur Section a propos
 const cursor = document.querySelector('.cursor');
 const sectionAPropos = document.getElementById('aPropos')
 function showCursor() {

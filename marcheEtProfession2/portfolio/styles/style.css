@@ -310,6 +310,10 @@ footer a:visited {
 #aPropos .waveTop {
   transform: translate(0, 2vh);
 }
+#aPropos .waveBot {
+  overflow-y: hidden;
+  transform: scaleX(1.5);
+}
 #aPropos .presentation {
   background-color: #2D2A32;
   padding: 8vh;

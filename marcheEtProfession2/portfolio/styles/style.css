@@ -23,17 +23,17 @@
     display: inline;
   }
 }
-#navBar li {
+#navBar ul div li {
   display: inline;
 }
-#navBar li a {
+#navBar ul div li a {
   position: relative;
   display: inline-block;
   text-decoration: none;
   color: #272838;
   padding: 1vh 2vh;
 }
-#navBar li a::before {
+#navBar ul div li a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -45,11 +45,11 @@
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-#navBar li a:hover::before {
+#navBar ul div li a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
-#navBar li .active::after {
+#navBar ul .active::after {
   content: "";
   position: absolute;
   width: 100%;

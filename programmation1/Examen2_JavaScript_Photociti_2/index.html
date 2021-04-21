@@ -3,188 +3,294 @@
 <!--Le 12 Avril 2020-->
 <!DOCTYPE html>
 <html lang="fr-ca">
-<head>
+  <head>
     <title>Projet Finale Programmation1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<!--SECTION UN-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--SECTION UN-->
     <div id="sectionUn" class="d-print-none">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-2 text-center my-auto">
-                    <i class="fas fa-4x fa-reply fleche"></i>
-                </div>
-                <div class="col-8">
-                    <div>
-                        <p class="font-weight-bold mb-0">Etape1</p>
-                        <i class="fas fa-2x fa-keyboard">Entrez votre mot</i>
-                    </div>
-                    <div>
-                        <form>
-                            <div class="form-group">
-                                <div class="input-group">
-                                <input type="text" class="form-control" id="motEntrez" aria-describedby="caracteresSpeciaux" placeholder="Entrez un mot entre 3 et 12 caracteres">
-                                    <p class="nimporte">GO!</p>
-                                </div>
-                                <small id="aideNom" class="form-text"></small>
-                                <small id="caractereSpeciaux" class="form-text text-muted">Utilisez * pour les caracteres speciaux</small>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-                <div class="col-2 text-center my-auto">
-                    <i class="fas fa-4x fa-share fleche aSectionDeux"></i>
-                </div>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-2 text-center my-auto">
+            <i class="fas fa-4x fa-reply fleche"></i>
+          </div>
+          <div class="col-8">
+            <div>
+              <p class="font-weight-bold mb-0">Etape1</p>
+              <i class="fas fa-2x fa-keyboard">Entrez votre mot</i>
             </div>
+            <div>
+              <form>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="motEntrez"
+                      aria-describedby="caracteresSpeciaux"
+                      placeholder="Entrez un mot entre 3 et 12 caracteres"
+                    />
+                    <p class="nimporte">GO!</p>
+                  </div>
+                  <small id="aideNom" class="form-text"></small>
+                  <small id="caractereSpeciaux" class="form-text text-muted"
+                    >Utilisez * pour les caracteres speciaux</small
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-2 text-center my-auto">
+            <i class="fas fa-4x fa-share fleche aSectionDeux"></i>
+          </div>
         </div>
+      </div>
     </div>
-<!--SECTION DEUX-->
+    <!--SECTION DEUX-->
     <div id="sectionDeux" class="container-fluid d-print-none">
-        <div class="row no-gutters">
-            <div class="col-2 text-center my-auto">
-                <i class="fas fa-4x fa-reply fleche aSectionUn"></i>
-            </div>
-            <div class="col-8">
-                <div>
-                    <p class="font-weight-bold mb-0">Etape2</p>
-                    <i class="fas fa-2x fa-sort-alpha-down"> Changez vos lettres</i>
-                </div>
-                <div>
-                    <p>Cliquez sur une lettre pour changer la photo</p>
-                </div>
-            </div>
-            <div class="col-2 text-center my-auto">
-                <i class="fas fa-4x fa-share fleche aSectionTrois"></i>
-            </div>
+      <div class="row no-gutters">
+        <div class="col-2 text-center my-auto">
+          <i class="fas fa-4x fa-reply fleche aSectionUn"></i>
         </div>
+        <div class="col-8">
+          <div>
+            <p class="font-weight-bold mb-0">Etape2</p>
+            <i class="fas fa-2x fa-sort-alpha-down"> Changez vos lettres</i>
+          </div>
+          <div>
+            <p>Cliquez sur une lettre pour changer la photo</p>
+          </div>
+        </div>
+        <div class="col-2 text-center my-auto">
+          <i class="fas fa-4x fa-share fleche aSectionTrois"></i>
+        </div>
+      </div>
     </div>
-<!--SECTION TROIS-->
+    <!--SECTION TROIS-->
     <div id="sectionTrois" class="container-fluid d-print-none">
-        <div class="row no-gutters">
-            <div class="col-2 text-center my-auto">
-                <i class="fas fa-4x fa-reply fleche aSectionDeux"></i>
-            </div>
-            <div class="col-8">
-                <div>
-                    <p class="font-weight-bold mb-0">Etape3</p>
-                    <i class="fas fa-2x fa-eye-dropper"> Changez le fond</i>
-                </div>
-                <div class="row">
-                    <p>Cliquez sur les couleurs pour changer le fond:</p>
-                    <button id="blanc" class="blanc ml-3 miniatureFond"></button>
-                    <button id="bleu" class="bleu miniatureFond"></button>
-                    <button id="bleuFonce" class="bleuFonce miniatureFond"></button>
-                    <button id="gris" class="gris miniatureFond"></button>
-                    <button id="noir" class="noir miniatureFond"></button>
-                    <button id="rose" class="rose miniatureFond"></button>
-                    <button id="rouge" class="rouge miniatureFond"></button>
-                </div>
-            </div>
-            <div class="col-2 text-center my-auto">
-                <i class="fas fa-4x fa-share fleche"></i>
-            </div>
+      <div class="row no-gutters">
+        <div class="col-2 text-center my-auto">
+          <i class="fas fa-4x fa-reply fleche aSectionDeux"></i>
         </div>
+        <div class="col-8">
+          <div>
+            <p class="font-weight-bold mb-0">Etape3</p>
+            <i class="fas fa-2x fa-eye-dropper"> Changez le fond</i>
+          </div>
+          <div class="row">
+            <p>Cliquez sur les couleurs pour changer le fond:</p>
+            <button id="blanc" class="blanc ml-3 miniatureFond"></button>
+            <button id="bleu" class="bleu miniatureFond"></button>
+            <button id="bleuFonce" class="bleuFonce miniatureFond"></button>
+            <button id="gris" class="gris miniatureFond"></button>
+            <button id="noir" class="noir miniatureFond"></button>
+            <button id="rose" class="rose miniatureFond"></button>
+            <button id="rouge" class="rouge miniatureFond"></button>
+          </div>
+        </div>
+        <div class="col-2 text-center my-auto">
+          <i class="fas fa-4x fa-share fleche flecheHide"></i>
+        </div>
+      </div>
     </div>
-<!--SECTION DES LETTRES-->
+    <!--SECTION DES LETTRES-->
     <div class="container-fluid pt-3">
-        <div class="blanc row no-gutters p-3 lettre">
-            <div class="lettreUn col lettre">
-                <img id="lettreUn" class="img-fluid borderImg mx-auto d-block" src="Letters/J/J1.jpg">
-            </div>
-            <div  class="lettreDeux col lettre">
-                <img id="lettreDeux" class="img-fluid borderImg mx-auto d-block" src="Letters/A/A1.jpg">
-            </div>
-            <div  class="lettreTrois col lettre">
-                <img id="lettreTrois" class="img-fluid borderImg mx-auto d-block" src="Letters/V/V1.jpg">
-            </div>
-            <div  class="lettreQuatre col lettre">
-                <img id="lettreQuattre" class="img-fluid borderImg mx-auto d-block" src="Letters/A/A1.jpg">
-            </div>
-            <div  class="lettreCinq col lettre">
-                <img id="lettreCinq" class="img-fluid borderImg mx-auto d-block" src="Letters/S/S1.jpg">
-            </div>
-            <div  class="lettreSix col lettre">
-                <img id="lettreSix" class="img-fluid borderImg mx-auto d-block" src="Letters/C/C1.jpg">
-            </div>
-            <div  class="lettreSept col lettre ">
-                <img id="lettreSept" class="img-fluid borderImg mx-auto d-block" src="Letters/R/R1.jpg">
-            </div>
-            <div  class="lettreHuit col lettre">
-                <img id="lettreHuit" class="img-fluid borderImg mx-auto d-block" src="Letters/I/I1.jpg">
-            </div>
-            <div  class="lettreNeuf col lettre">
-                <img id="lettreNeuf" class="img-fluid borderImg mx-auto d-block" src="Letters/P/P1.jpg">
-            </div>
-            <div class="lettreDix col lettre ">
-                <img id="lettreDix"  class="img-fluid borderImg mx-auto d-block" src="Letters/T/T1.jpg">
-            </div>
-            <div class="lettreOnze col lettre">
-                <img id="lettreOnze" class="img-fluid borderImg mx-auto d-block" src="">
-            </div>
-            <div class="lettreDouze col lettre">
-                <img id="lettreDouze" class="img-fluid borderImg mx-auto d-block" src="">
-            </div>
+      <div class="blanc row no-gutters p-3 lettre">
+        <div class="lettreUn col lettre">
+          <img
+            id="lettreUn"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/J/J1.jpg"
+          />
         </div>
+        <div class="lettreDeux col lettre">
+          <img
+            id="lettreDeux"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/A/A1.jpg"
+          />
+        </div>
+        <div class="lettreTrois col lettre">
+          <img
+            id="lettreTrois"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/V/V1.jpg"
+          />
+        </div>
+        <div class="lettreQuatre col lettre">
+          <img
+            id="lettreQuattre"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/A/A1.jpg"
+          />
+        </div>
+        <div class="lettreCinq col lettre">
+          <img
+            id="lettreCinq"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/S/S1.jpg"
+          />
+        </div>
+        <div class="lettreSix col lettre">
+          <img
+            id="lettreSix"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/C/C1.jpg"
+          />
+        </div>
+        <div class="lettreSept col lettre">
+          <img
+            id="lettreSept"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/R/R1.jpg"
+          />
+        </div>
+        <div class="lettreHuit col lettre">
+          <img
+            id="lettreHuit"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/I/I1.jpg"
+          />
+        </div>
+        <div class="lettreNeuf col lettre">
+          <img
+            id="lettreNeuf"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/P/P1.jpg"
+          />
+        </div>
+        <div class="lettreDix col lettre">
+          <img
+            id="lettreDix"
+            class="img-fluid borderImg mx-auto d-block"
+            src="Letters/T/T1.jpg"
+          />
+        </div>
+        <div class="lettreOnze col lettre">
+          <img
+            id="lettreOnze"
+            class="img-fluid borderImg mx-auto d-block"
+            src=""
+          />
+        </div>
+        <div class="lettreDouze col lettre">
+          <img
+            id="lettreDouze"
+            class="img-fluid borderImg mx-auto d-block"
+            src=""
+          />
+        </div>
+      </div>
     </div>
-<!--MODAL AVEC CAROUSEL-->
+    <!--MODAL AVEC CAROUSEL-->
     <div id="myModal" class="modal d-print-none" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Cliquez sur une lettre pour la changer</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cliquez sur une lettre pour la changer</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    id="carouselUn"
+                    class="img-fluid mx-auto d-block imgCarousel"
+                    src=""
+                    alt=""
+                  />
                 </div>
-                <div class="modal-body">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                        </ul>
-                        <div class="carousel-inner">
-                            <div class="carousel-item  active">
-                                <img id="carouselUn" class="img-fluid mx-auto d-block imgCarousel" src="" alt="">
-                            </div>
-                            <div class="carousel-item ">
-                                <img id="carouselDeux" class="img-fluid  mx-auto d-block imgCarousel" src="" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img id="carouselTrois" class="img-fluid mx-auto d-block imgCarousel" src="" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img id="carouselQuatre" class="img-fluid mx-auto d-block imgCarousel" src="" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img id="carouselCinq" class="img-fluid mx-auto d-block imgCarousel" src="" alt="">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
+                <div class="carousel-item">
+                  <img
+                    id="carouselDeux"
+                    class="img-fluid mx-auto d-block imgCarousel"
+                    src=""
+                    alt=""
+                  />
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="carousel-item">
+                  <img
+                    id="carouselTrois"
+                    class="img-fluid mx-auto d-block imgCarousel"
+                    src=""
+                    alt=""
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    id="carouselQuatre"
+                    class="img-fluid mx-auto d-block imgCarousel"
+                    src=""
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    id="carouselCinq"
+                    class="img-fluid mx-auto d-block imgCarousel"
+                    src=""
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#myCarousel"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#myCarousel"
+                data-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </a>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-<!---->
-<script src="js/jquery-3.4.1.js"></script>
-<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
-<script src="js/main.js"></script>
-</body>
+    <!---->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

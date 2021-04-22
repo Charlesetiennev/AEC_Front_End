@@ -1,3 +1,20 @@
+// Injection des technologies enseignées dans un liste 
+let technoEnseignees = ['React, Angular, Vue.js',
+                        'La gestion de projet (Scrum, Methode Agile etc.)',
+                        'Le Html et Css (svg, animations, bootstrap, Sass etc.)',
+                        'Javascript ES6, Jquery',
+                        'TypeScript',
+                        'Test unitaires avec Jest et Karma',
+                        'Gestion d\'une API (CRUD)',
+                        'MYSQL et PHP',
+                        'Déploiment de sites WEB',
+                        'Git',
+                        'er plusieurs autres technologies et notions qui rejoignent le métier de dévelopeur WEB.',]
+
+const liste = document.querySelector('.listeTechno');
+liste.innerHTML= technoEnseignees.map(function(technoEnseignee){
+  return '<li><span>' +technoEnseignee+ '</span></li>';
+})
 // Modal
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("myBtn");

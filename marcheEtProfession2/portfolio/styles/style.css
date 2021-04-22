@@ -357,75 +357,83 @@
 #navBar ul {
   list-style-type: none;
   overflow: hidden;
-  padding: 2vh;
+  padding: 1vh 0;
   margin: 0;
-  background-color: white;
-  border-bottom: solid 3px #E57A44;
-}
-#navBar ul .liensNav {
-  display: block;
+  background-color: #C57B57;
+  border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }
-@media (min-width: 768px) {
-  #navBar ul .liensNav {
-    display: inline;
+#navBar ul li {
+  width: 33%;
+}
+@media (min-width: 992px) {
+  #navBar ul li {
+    width: 20%;
   }
 }
-#navBar ul .liensNav li {
-  display: inline;
-}
-#navBar ul .liensNav li a {
+#navBar ul li a, #navBar ul li button {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #272838;
+  color: #F9F7F3;
   padding: 1vh 2vh;
 }
-#navBar ul .liensNav li a::before {
+#navBar ul li a::before, #navBar ul li button::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #F9F7F3;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-#navBar ul .liensNav li a:hover::before {
+#navBar ul li a:hover::before, #navBar ul li button:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
-#navBar ul .active::after {
+#navBar ul li .active::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
-  visibility: visible;
+  background-color: #F9F7F3;
 }
-#navBar button {
+
+button {
   border: none;
   outline: none;
-  background-color: white;
+  background-color: #C57B57;
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
 }
-#navBar button:hover {
+button:hover {
   cursor: pointer;
 }
 
 footer {
-  background-color: white;
+  background-color: #C57B57;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  transform: translateY(-3vh);
+}
+footer p {
+  color: white;
+  padding-left: 3vh;
+}
+footer div {
+  padding-right: 3vh;
 }
 footer a {
-  color: black;
+  color: white;
   margin: 0 1vh;
 }
 footer a:link {
